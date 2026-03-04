@@ -1,0 +1,991 @@
+<!doctype html>
+<html lang="uk">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+		<link rel="preload" href="./assets/fonts/NunitoSans-Variable.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/NunitoSans-Italic-Variable.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/Manrope-Variable.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="shortcut icon" href="./assets/favicon/favicon.ico">
+		<meta name="keywords" content="IED Keywords">
+		<meta name="description" content="IED Description">
+		<title>Projects | IED</title>
+		<script type="module" crossorigin="" src="./js/vendor.min.js?v=1772616850015"></script>
+		<script type="module" crossorigin="" src="./js/app.min.js?v=1772616850015"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/style.min.css?v=1772616850015">
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header">
+				<div class="header__container container">
+					<div class="header__wrap">
+						<div class="header__row">
+							<a href="/" class="header__logo">
+								<picture>
+									<source media="(max-width: 768px)" srcset="./assets/img/logo-768.webp" type="image/webp">
+									<source media="(max-width: 1280px)" srcset="./assets/img/logo-1280.webp" type="image/webp">
+									<img alt="IED Logo, to the homepage" width="260" height="88" fetchpriority="high" src="./assets/img/logo.webp">
+								</picture>
+							</a>
+							<div class="header__menus">
+								<nav class="header__top-nav top-nav">
+									<div class="top-nav__row">
+										<ul class="top-nav__menu">
+											<li>
+												<a href="/" data-variant="green">Економіка</a>
+											</li>
+											<li>
+												<a href="/" data-variant="blue">Євроінтеграція</a>
+												<div class="top-nav__sublist nav-sublist">
+													<div class="nav-sublist__body">
+														<ul class="nav-sublist__menu">
+															<li>
+																<a href="/">Національна програма адаптації</a>
+															</li>
+															<li>
+																<a href="/">ВВП</a>
+															</li>
+															<li>
+																<a href="/">Інфляція</a>
+															</li>
+															<li>
+																<a href="/">Держборг</a>
+															</li>
+															<li>
+																<a href="/">План України</a>
+															</li>
+															<li>
+																<a href="/">Експорт</a>
+															</li>
+														</ul>
+													</div>
+													<div class="nav-sublist__footer">
+														<a href="#" class="nav-sublist__link-more">Дивитись всі</a>
+													</div>
+												</div>
+											</li>
+											<li>
+												<a href="/" data-variant="yellow">Бізнес-клімат</a>
+											</li>
+											<li>
+												<a href="/" data-variant="orange">Відбудова</a>
+											</li>
+											<li>
+												<a href="/" data-variant="purple">Субгрантинг</a>
+											</li>
+										</ul>
+										<button class="top-nav__search-btn" aria-label="Search" data-popup-trigger="search">
+											<i class="icon-search" aria-hidden="true"></i>
+										</button>
+									</div>
+								</nav>
+								<nav class="header__bottom-nav bottom-nav">
+									<div class="bottom-nav__row">
+										<ul class="bottom-nav__menu">
+											<li>
+												<div class="bottom-nav__dropdown nav-dropdown">
+													<button class="nav-dropdown__btn" data-popup-trigger="about">
+														<span>Про нас</span>
+													</button>
+													<div class="nav-dropdown__popup" data-popup="about">
+														<ul class="nav-dropdown__list">
+															<li>
+																<button class="nav-dropdown__btn">
+																	<span>Про нас</span>
+																</button>
+															</li>
+															<li>
+																<a href="/">Команда</a>
+															</li>
+															<li>
+																<a href="/">Вакансії</a>
+															</li>
+															<li>
+																<a href="/">Контакти</a>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</li>
+											<li>
+												<a href="/">Новини</a>
+											</li>
+											<li>
+												<a href="/">Події</a>
+											</li>
+											<li>
+												<a href="/">Продукти</a>
+											</li>
+											<li>
+												<a href="/">Проєкти</a>
+											</li>
+											<li>
+												<a href="/">Бази даних</a>
+											</li>
+											<li>
+												<a href="/">ІЕД в медіа</a>
+											</li>
+											<li>
+												<div class="bottom-nav__dropdown nav-dropdown">
+													<button class="nav-dropdown__burger" data-popup-trigger="burger">
+														<span aria-hidden="true"></span>
+														<span aria-hidden="true"></span>
+														<span aria-hidden="true"></span>
+													</button>
+													<div class="nav-dropdown__popup" data-popup="burger">
+														<ul class="nav-dropdown__list">
+															<li>
+																<button class="nav-dropdown__burger">
+																	<span aria-hidden="true"></span>
+																	<span aria-hidden="true"></span>
+																	<span aria-hidden="true"></span>
+																</button>
+															</li>
+															<li>
+																<a href="/">Донори</a>
+															</li>
+															<li>
+																<a href="/">Партнери</a>
+															</li>
+															<li>
+																<a href="/">Оголошення</a>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</li>
+										</ul>
+										<div class="lang-select" data-lang-select="">
+											<button type="button" class="lang-select__toggle" id="lang-select-button" aria-haspopup="listbox" aria-expanded="false" aria-controls="lang-select-list" data-lang-select-toggle="">UA</button>
+											<div class="lang-select__popup" id="lang-select-popup" data-lang-select-popup="">
+												<ul class="lang-select__list" id="lang-select-list" role="listbox" tabindex="-1" aria-labelledby="lang-select-button" data-lang-select-list="">
+													<li class="lang-select__option" role="option" data-lang-select-code="en" aria-selected="true" tabindex="0">ENG</li>
+													<li class="lang-select__option" role="option" data-lang-select-code="uk" aria-selected="false" tabindex="0">UA</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</nav>
+							</div>
+						</div>
+						<div class="header__top header-top">
+							<div class="header-top__row">
+								<a href="/" class="header-top__logo">
+									<picture>
+										<source media="(max-width: 768px)" srcset="./assets/img/logo-768.webp" type="image/webp">
+										<source media="(max-width: 1280px)" srcset="./assets/img/logo-1280.webp" type="image/webp">
+										<img alt="IED Logo, to the homepage" width="108" height="37" fetchpriority="high" src="./assets/img/logo.webp">
+									</picture>
+								</a>
+								<ul class="header-top__list">
+									<li>
+										<button class="header-top__search-btn" aria-label="Search" data-popup-trigger="search">
+											<i class="icon-search" aria-hidden="true"></i>
+										</button>
+									</li>
+									<li>
+										<div class="lang-select" data-lang-select="">
+											<button type="button" class="lang-select__toggle" id="lang-select-button" aria-haspopup="listbox" aria-expanded="false" aria-controls="lang-select-list" data-lang-select-toggle="">UA</button>
+											<div class="lang-select__popup" id="lang-select-popup" data-lang-select-popup="">
+												<ul class="lang-select__list" id="lang-select-list" role="listbox" tabindex="-1" aria-labelledby="lang-select-button" data-lang-select-list="">
+													<li class="lang-select__option" role="option" data-lang-select-code="en" aria-selected="true" tabindex="0">ENG</li>
+													<li class="lang-select__option" role="option" data-lang-select-code="uk" aria-selected="false" tabindex="0">UA</li>
+												</ul>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="header-top__menu menu" data-menu="">
+											<button class="menu__burger" data-menu-burger="">
+												<span aria-hidden="true"></span>
+												<span aria-hidden="true"></span>
+												<span aria-hidden="true"></span>
+											</button>
+											<div class="menu__popup" data-menu-body="">
+												<div class="menu__scroll-container">
+													<div class="menu__group">
+														<ul class="menu__list">
+															<li>
+																<a href="/">Про нас</a>
+																<button class="menu__arrow" data-menu-arrow="">
+																	<i class="icon-chevron-down" aria-hidden="true"></i>
+																</button>
+																<div class="menu__sublist">
+																	<div class="menu__sublist-inner">
+																		<ul class="menu__sublist-pad">
+																			<li>
+																				<a href="/">Команда</a>
+																			</li>
+																			<li>
+																				<a href="/">Вакансії</a>
+																			</li>
+																			<li>
+																				<a href="/">Контакти</a>
+																			</li>
+																		</ul>
+																	</div>
+																</div>
+															</li>
+															<li>
+																<a href="/">Новини</a>
+															</li>
+															<li>
+																<a href="/">Події</a>
+															</li>
+															<li>
+																<a href="/">Продукти</a>
+															</li>
+															<li>
+																<a href="/">Проєкти</a>
+															</li>
+															<li>
+																<a href="/">Бази даних</a>
+															</li>
+															<li>
+																<a href="/">ІЕД в медіа</a>
+															</li>
+														</ul>
+													</div>
+													<div class="menu__group">
+														<ul class="menu__list">
+															<li>
+																<a href="/">Донори</a>
+															</li>
+															<li>
+																<a href="/">Партнери</a>
+															</li>
+															<li>
+																<a href="/">Оголошення</a>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="header__bottom header-bottom">
+							<nav class="header-bottom__nav">
+								<ul class="header-bottom__menu">
+									<li>
+										<a href="/">Економіка</a>
+									</li>
+									<li>
+										<a href="/">Євроінтеграція</a>
+										<div class="header-bottom__sublist nav-sublist">
+											<div class="nav-sublist__body">
+												<ul class="nav-sublist__menu">
+													<li>
+														<a href="/">Національна програма адаптації</a>
+													</li>
+													<li>
+														<a href="/">ВВП</a>
+													</li>
+													<li>
+														<a href="/">Інфляція</a>
+													</li>
+													<li>
+														<a href="/">Держборг</a>
+													</li>
+													<li>
+														<a href="/">План України</a>
+													</li>
+													<li>
+														<a href="/">Експорт</a>
+													</li>
+												</ul>
+											</div>
+											<div class="nav-sublist__footer">
+												<a href="#" class="nav-sublist__link-more">Дивитись всі</a>
+											</div>
+										</div>
+									</li>
+									<li>
+										<a href="/">Бізнес-клімат</a>
+									</li>
+									<li>
+										<a href="/">Відбудова</a>
+									</li>
+									<li>
+										<a href="/">Субгрантинг</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</header>
+			<div class="header-search-popup" data-popup="search">
+				<div class="header-search-popup__backdrop" data-popup-close=""></div>
+				<div class="header-search-popup__inner">
+					<div class="header-search-popup__input input input--search">
+						<input type="text" placeholder="Пошук по сайту">
+					</div>
+				</div>
+			</div>
+			<main role="main">
+				<!-- Section 01: Main (done) -->
+				<section class="section-page section-page--projects" aria-labelledby="sectionAboutTitle">
+					<div class="section-page__container container">
+						<div class="section-page__wrap">
+							<div class="section-page__header">
+								<nav class="section-page__breadcrumbs breadcrumbs" aria-label="Breadcrumb">
+									<ol class="breadcrumbs__list">
+										<li class="breadcrumbs__item">
+											<a href="/">Головна</a>
+										</li>
+										<li class="breadcrumbs__item" aria-current="page">
+											<span>Проєкти</span>
+										</li>
+									</ol>
+								</nav>
+								<h2 class="section-page__title" id="sectionAboutTitle">Проєкти</h2>
+								<h3 class="section-page__subtitle section-title section-title--sm">Ключові проєкти</h3>
+							</div>
+							<div class="section-page__body">
+								<div class="section-page__slider-wrap">
+									<div id="swiperProjects" class="swiper">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide">
+												<article class="project-card project-card--white">
+													<div class="project-card__header">
+														<h3 class="project-card__title">Вплив єЧерги на прикордонну логістику та громади</h3>
+													</div>
+													<div class="project-card__body">
+														<div class="project-card__desc-text">
+															<p>
+																Оцінити вплив впровадження системи електронної черги (єЧерга) на ефективність логістики.
+															</p>
+														</div>
+													</div>
+													<div class="project-card__footer">
+														<ul class="project-card__metas card-metas">
+															<li>
+																<ul class="card-metas__tags">
+																	<li>
+																		<span class="ui-tag" data-variant="green">Економіка</span>
+																	</li>
+																	<li>
+																		<span class="ui-tag" data-variant="yellow">Бізнес-клімат</span>
+																	</li>
+																</ul>
+															</li>
+															<li>
+																<ul class="card-metas__hashtags">
+																	<li>
+																		<a href="/">#Фінанси</a>
+																	</li>
+																</ul>
+															</li>
+														</ul>
+														<a href="/" class="project-card__link-more">
+															<span>детальніше</span>
+															<i class="icon-btn-arrow" aria-hidden="true"></i>
+														</a>
+													</div>
+												</article>
+											</div>
+											<div class="swiper-slide">
+												<article class="project-card project-card--white">
+													<div class="project-card__header">
+														<h3 class="project-card__title">Вплив єЧерги на прикордонну логістику та громади</h3>
+													</div>
+													<div class="project-card__body">
+														<div class="project-card__desc-text">
+															<p>
+																Оцінити вплив впровадження системи електронної черги (єЧерга) на ефективність логістики та соціально-економічну ситуацію в прикордонних громадах.
+															</p>
+														</div>
+													</div>
+													<div class="project-card__footer">
+														<ul class="project-card__metas card-metas">
+															<li>
+																<ul class="card-metas__tags">
+																	<li>
+																		<span class="ui-tag" data-variant="green">Економіка</span>
+																	</li>
+																	<li>
+																		<span class="ui-tag" data-variant="yellow">Бізнес-клімат</span>
+																	</li>
+																</ul>
+															</li>
+															<li>
+																<ul class="card-metas__hashtags">
+																	<li>
+																		<a href="/">#Фінанси</a>
+																	</li>
+																</ul>
+															</li>
+														</ul>
+														<a href="/" class="project-card__link-more">
+															<span>детальніше</span>
+															<i class="icon-btn-arrow" aria-hidden="true"></i>
+														</a>
+													</div>
+												</article>
+											</div>
+											<div class="swiper-slide">
+												<article class="project-card project-card--white">
+													<div class="project-card__header">
+														<h3 class="project-card__title">Вплив єЧерги на прикордонну логістику та громади</h3>
+													</div>
+													<div class="project-card__body">
+														<div class="project-card__desc-text">
+															<p>
+																Оцінити вплив впровадження системи електронної черги (єЧерга) на ефективність логістики та соціально-економічну ситуацію в прикордонних громадах.
+															</p>
+														</div>
+													</div>
+													<div class="project-card__footer">
+														<ul class="project-card__metas card-metas">
+															<li>
+																<ul class="card-metas__tags">
+																	<li>
+																		<span class="ui-tag" data-variant="green">Економіка</span>
+																	</li>
+																	<li>
+																		<span class="ui-tag" data-variant="yellow">Бізнес-клімат</span>
+																	</li>
+																</ul>
+															</li>
+															<li>
+																<ul class="card-metas__hashtags">
+																	<li>
+																		<a href="/">#Фінанси</a>
+																	</li>
+																</ul>
+															</li>
+														</ul>
+														<a href="/" class="project-card__link-more">
+															<span>детальніше</span>
+															<i class="icon-btn-arrow" aria-hidden="true"></i>
+														</a>
+													</div>
+												</article>
+											</div>
+											<div class="swiper-slide">
+												<article class="project-card project-card--white">
+													<div class="project-card__header">
+														<h3 class="project-card__title">Вплив єЧерги на прикордонну логістику та громади</h3>
+													</div>
+													<div class="project-card__body">
+														<div class="project-card__desc-text">
+															<p>
+																Оцінити вплив впровадження системи електронної черги (єЧерга) на ефективність логістики та соціально-економічну ситуацію в прикордонних громадах.
+															</p>
+														</div>
+													</div>
+													<div class="project-card__footer">
+														<ul class="project-card__metas card-metas">
+															<li>
+																<ul class="card-metas__tags">
+																	<li>
+																		<span class="ui-tag" data-variant="green">Економіка</span>
+																	</li>
+																	<li>
+																		<span class="ui-tag" data-variant="yellow">Бізнес-клімат</span>
+																	</li>
+																</ul>
+															</li>
+															<li>
+																<ul class="card-metas__hashtags">
+																	<li>
+																		<a href="/">#Фінанси</a>
+																	</li>
+																</ul>
+															</li>
+														</ul>
+														<a href="/" class="project-card__link-more">
+															<span>детальніше</span>
+															<i class="icon-btn-arrow" aria-hidden="true"></i>
+														</a>
+													</div>
+												</article>
+											</div>
+										</div>
+										<div class="section-page__slider-nav slider-nav">
+											<button id="swiperProjectsPrev" class="slider-nav__btn">
+												<i class="icon-chevron-left" aria-hidden="true"></i>
+											</button>
+											<div id="swiperProjectsPagination" class="slider-nav__pagination swiper-pagination"></div>
+											<button id="swiperProjectsNext" class="slider-nav__btn">
+												<i class="icon-chevron-right" aria-hidden="true"></i>
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- Section 02: List (done) -->
+				<section class="section-page section-page--events" aria-labelledby="sectionEventsTitle">
+					<div class="section-page__container container">
+						<div class="section-page__wrap">
+							<div class="section-page__header">
+								<div class="section-page__filters page-filters">
+									<div class="page-filters__row">
+										<div class="page-filters__col">
+											<div class="select select--page">
+												<select name="theme" id="themeEventsControl" data-select="" data-select-placeholder="Тема">
+													<option value="0">Економіка</option>
+													<option value="1">Євроінтеграція</option>
+													<option value="2">Бізнес-клімат</option>
+													<option value="3">Відбудова</option>
+												</select>
+											</div>
+										</div>
+										<div class="page-filters__col">
+											<div class="select select--page">
+												<select name="eventType" id="eventTypeControl" data-select="" data-select-placeholder="Донор">
+													<option value="0">Прес-конференція</option>
+													<option value="1">Тренінг</option>
+													<option value="2">Семінар</option>
+												</select>
+											</div>
+										</div>
+										<div class="page-filters__col">
+											<label class="input input--date input--page">
+												<input type="text" name="date" id="dateControl" placeholder="Дата" date-input="">
+											</label>
+										</div>
+										<div class="page-filters__col page-filters__col--fixed">
+											<label class="search-input">
+												<input type="text" placeholder="Ключове слово">
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="section-page__body">
+								<ul class="section-page__projects">
+									<li>
+										<article class="project-card">
+											<div class="project-card__header">
+												<h3 class="project-card__title">Вплив єЧерги на прикордонну логістику та громади</h3>
+											</div>
+											<div class="project-card__body">
+												<div class="project-card__desc-text">
+													<p>
+														Оцінити вплив впровадження системи електронної черги (єЧерга) на ефективність логістики та соціально-економічну ситуацію в прикордонних громадах.
+													</p>
+												</div>
+											</div>
+											<div class="project-card__footer">
+												<ul class="project-card__metas card-metas">
+													<li>
+														<ul class="card-metas__tags">
+															<li>
+																<span class="ui-tag" data-variant="green">Економіка</span>
+															</li>
+															<li>
+																<span class="ui-tag" data-variant="yellow">Бізнес-клімат</span>
+															</li>
+														</ul>
+													</li>
+													<li>
+														<ul class="card-metas__hashtags">
+															<li>
+																<a href="/">#Фінанси</a>
+															</li>
+															<li>
+																<a href="/">#Бізнес</a>
+															</li>
+														</ul>
+													</li>
+												</ul>
+											</div>
+										</article>
+									</li>
+									<li>
+										<article class="project-card">
+											<div class="project-card__header">
+												<h3 class="project-card__title">Спільне майбутнє. Польща та Україна на єдиному європейському ринку</h3>
+											</div>
+											<div class="project-card__body">
+												<div class="project-card__desc-text">
+													<p>
+														Поглибити взаєморозуміння між Україною та Польщею в контексті вступу України до ЄС шляхом створення експертної бази, напрацювання рішень і платформи для діалогу.
+													</p>
+												</div>
+											</div>
+											<div class="project-card__footer">
+												<ul class="project-card__metas card-metas">
+													<li>
+														<ul class="card-metas__tags">
+															<li>
+																<span class="ui-tag" data-variant="blue">Євроінтеграція</span>
+															</li>
+														</ul>
+													</li>
+													<li>
+														<ul class="card-metas__hashtags">
+															<li>
+																<a href="/">#Фінанси</a>
+															</li>
+															<li>
+																<a href="/">#Бізнес</a>
+															</li>
+														</ul>
+													</li>
+												</ul>
+											</div>
+										</article>
+									</li>
+									<li>
+										<article class="project-card">
+											<div class="project-card__header">
+												<h3 class="project-card__title">Перспективи України</h3>
+											</div>
+											<div class="project-card__body">
+												<div class="project-card__desc-text">
+													<p>
+														Сприяти розробці більш ефективних та стійких німецьких стратегій щодо реформ в Україні
+													</p>
+												</div>
+											</div>
+											<div class="project-card__footer">
+												<ul class="project-card__metas card-metas">
+													<li>
+														<ul class="card-metas__tags">
+															<li>
+																<span class="ui-tag" data-variant="blue">Євроінтеграція</span>
+															</li>
+															<li>
+																<span class="ui-tag" data-variant="purple">Субгрантинг</span>
+															</li>
+															<li>
+																<span class="ui-tag" data-variant="green">Економіка</span>
+															</li>
+														</ul>
+													</li>
+													<li>
+														<ul class="card-metas__hashtags">
+															<li>
+																<a href="/">#Фінанси</a>
+															</li>
+															<li>
+																<a href="/">#Бізнес</a>
+															</li>
+														</ul>
+													</li>
+												</ul>
+											</div>
+										</article>
+									</li>
+									<li>
+										<article class="project-card">
+											<div class="project-card__header">
+												<h3 class="project-card__title">Шлях України до Європейського Союзу. Досвід вступу Польщі</h3>
+											</div>
+											<div class="project-card__body">
+												<div class="project-card__desc-text">
+													<p>
+														Підтримка підготовку України до майбутнього членства в ЄС шляхом обговорення досвіду польських підприємців
+													</p>
+												</div>
+											</div>
+											<div class="project-card__footer">
+												<ul class="project-card__metas card-metas">
+													<li>
+														<ul class="card-metas__tags">
+															<li>
+																<span class="ui-tag" data-variant="green">Економіка</span>
+															</li>
+														</ul>
+													</li>
+													<li>
+														<ul class="card-metas__hashtags">
+															<li>
+																<a href="/">#Фінанси</a>
+															</li>
+															<li>
+																<a href="/">#Бізнес</a>
+															</li>
+														</ul>
+													</li>
+												</ul>
+											</div>
+										</article>
+									</li>
+									<li>
+										<article class="project-card">
+											<div class="project-card__header">
+												<h3 class="project-card__title">Шлях України до Європейського Союзу. Досвід вступу Польщі</h3>
+											</div>
+											<div class="project-card__body">
+												<div class="project-card__desc-text">
+													<p>
+														Підтримка підготовку України до майбутнього членства в ЄС шляхом обговорення досвіду польських підприємців
+													</p>
+												</div>
+											</div>
+											<div class="project-card__footer">
+												<ul class="project-card__metas card-metas">
+													<li>
+														<ul class="card-metas__tags">
+															<li>
+																<span class="ui-tag" data-variant="purple">Субгрантинг</span>
+															</li>
+															<li>
+																<span class="ui-tag" data-variant="green">Економіка</span>
+															</li>
+														</ul>
+													</li>
+													<li>
+														<ul class="card-metas__hashtags">
+															<li>
+																<a href="/">#Фінанси</a>
+															</li>
+															<li>
+																<a href="/">#Бізнес</a>
+															</li>
+														</ul>
+													</li>
+												</ul>
+											</div>
+										</article>
+									</li>
+									<li>
+										<article class="project-card">
+											<div class="project-card__header">
+												<h3 class="project-card__title">Шлях України до Європейського Союзу. Досвід вступу Польщі</h3>
+											</div>
+											<div class="project-card__body">
+												<div class="project-card__desc-text">
+													<p>
+														Підтримка підготовку України до майбутнього членства в ЄС шляхом обговорення досвіду польських підприємців
+													</p>
+												</div>
+											</div>
+											<div class="project-card__footer">
+												<ul class="project-card__metas card-metas">
+													<li>
+														<ul class="card-metas__tags">
+															<li>
+																<span class="ui-tag" data-variant="green">Економіка</span>
+															</li>
+														</ul>
+													</li>
+													<li>
+														<ul class="card-metas__hashtags">
+															<li>
+																<a href="/">#Фінанси</a>
+															</li>
+															<li>
+																<a href="/">#Бізнес</a>
+															</li>
+														</ul>
+													</li>
+												</ul>
+											</div>
+										</article>
+									</li>
+								</ul>
+							</div>
+							<div class="section-page__footer">
+								<button class="section-page__btn btn" type="button" data-variant="primary" data-size="lg">
+									<i class="icon-refresh" aria-hidden="true"></i>
+									<span>завантажити більше</span>
+								</button>
+								<nav class="ui-pagination" aria-label="Pagination">
+									<a href="#" class="ui-pagination__control _disabled" aria-disabled="true">
+										<i class="icon-slider-chevron-left" aria-hidden="true"></i>
+										<span>назад</span>
+									</a>
+									<ul class="ui-pagination__list">
+										<li>
+											<a href="#" class="ui-pagination__link _active" aria-current="page">1</a>
+										</li>
+										<li>
+											<a href="#" class="ui-pagination__link">2</a>
+										</li>
+										<li>
+											<a href="#" class="ui-pagination__link">3</a>
+										</li>
+										<li>
+											<a href="#" class="ui-pagination__link">4</a>
+										</li>
+										<li>
+											<a href="#" class="ui-pagination__link ui-pagination__link--dots">...</a>
+										</li>
+										<li>
+											<a href="#" class="ui-pagination__link">9</a>
+										</li>
+									</ul>
+									<a href="#" class="ui-pagination__control">
+										<span>вперед</span>
+										<i class="icon-slider-chevron-right" aria-hidden="true"></i>
+									</a>
+								</nav>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+			<footer class="footer" role="contentinfo">
+				<div class="footer__top footer-top">
+					<div class="footer-top__container container">
+						<div class="footer-top__wrap">
+							<div class="footer-top__row">
+								<div class="footer-top__brand">
+									<a href="/" class="footer-top__logo" aria-label="ІЕД">
+										<img src="./assets/img/layout/footer-logo.svg" alt="ІНСТИТУТ ЕКОНОМІЧНИХ досліджень ТА ПОЛІТИЧНИХ КОНСУЛЬТАЦІЙ" width="400" height="68" loading="lazy" decoding="async">
+									</a>
+									<ul class="footer-top__contacts">
+										<li>
+											<i class="icon-map-pin" aria-hidden="true"></i>
+											<span>вул. Рейтарська 8/5-А, 01054 Київ, Україна</span>
+										</li>
+										<li>
+											<i class="icon-phone" aria-hidden="true"></i>
+											<span>
+												<a href="tel:+380442786342">+38 044 278-63-42</a>
+												,
+												<a href="tel:+380442786360">+38 044 278-63-60</a>
+											</span>
+										</li>
+										<li>
+											<i class="icon-mail" aria-hidden="true"></i>
+											<a href="mailto:institute@ier.kyiv.ua">institute@ier.kyiv.ua</a>
+										</li>
+									</ul>
+									<a href="#" class="footer-top__old-version">
+										<i class="icon-globe" aria-hidden="true"></i>
+										<span>Попередня версія сайту</span>
+									</a>
+								</div>
+								<nav class="footer-top__menus" aria-label="Footer navigation">
+									<ul class="footer-top__menu">
+										<li>
+											<a href="#">Про нас</a>
+										</li>
+										<li>
+											<a href="#">Новини</a>
+										</li>
+										<li>
+											<a href="#">Події</a>
+										</li>
+										<li>
+											<a href="#">Публікації</a>
+										</li>
+										<li>
+											<a href="#">Проєкти</a>
+										</li>
+									</ul>
+									<ul class="footer-top__menu">
+										<li>
+											<a href="#">ІЕД в медіа</a>
+										</li>
+										<li>
+											<a href="#">Оголошення</a>
+										</li>
+										<li>
+											<a href="#">Вакансії</a>
+										</li>
+										<li>
+											<a href="#">Партнери</a>
+										</li>
+										<li>
+											<a href="#">База даних</a>
+										</li>
+									</ul>
+									<ul class="footer-top__menu">
+										<li>
+											<a href="#" data-variant="green">Економіка</a>
+										</li>
+										<li>
+											<a href="#" data-variant="blue">Євроінтеграція</a>
+										</li>
+										<li>
+											<a href="#" data-variant="yellow">Бізнес-клімат</a>
+										</li>
+										<li>
+											<a href="#" data-variant="orange">Відбудова</a>
+										</li>
+										<li>
+											<a href="#" data-variant="purple">Субгрантинг</a>
+										</li>
+									</ul>
+								</nav>
+								<div class="footer-top__subscribe">
+									<ul class="footer-top__soc" aria-label="Соціальні мережі">
+										<li>
+											<a href="#" aria-label="Facebook">
+												<i class="icon-facebook" aria-hidden="true"></i>
+											</a>
+										</li>
+										<li>
+											<a href="#" aria-label="X">
+												<i class="icon-twitter-x" aria-hidden="true"></i>
+											</a>
+										</li>
+										<li>
+											<a href="#" aria-label="LinkedIn">
+												<i class="icon-linkedin" aria-hidden="true"></i>
+											</a>
+										</li>
+										<li>
+											<a href="#" aria-label="Telegram">
+												<i class="icon-telegram" aria-hidden="true"></i>
+											</a>
+										</li>
+										<li>
+											<a href="#" aria-label="Instagram">
+												<i class="icon-instagram" aria-hidden="true"></i>
+											</a>
+										</li>
+										<li>
+											<a href="#" aria-label="Viber">
+												<i class="icon-viber" aria-hidden="true"></i>
+											</a>
+										</li>
+									</ul>
+									<form class="footer-top__form footer-form" action="#" method="post">
+										<p class="footer-form__title">Залиште свій e-mail та отримуйте новини:</p>
+										<label class="footer-form__input input">
+											<span class="sr-only">E-mail</span>
+											<input type="email" value="kontstantinopolsky@gmail.com" placeholder="E-mail">
+										</label>
+										<button type="submit" data-variant="blue" data-size="sm" class="footer-form__btn btn">Підписатися</button>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer__bottom footer-bottom">
+					<div class="footer-bottom__container container">
+						<div class="footer-bottom__wrap">
+							<div class="footer-bottom__row">
+								<div class="footer-bottom__meta">
+									<div class="footer-bottom__atlas">
+										<figure>
+											<picture>
+												<source media="(max-width: 768px)" srcset="./assets/img/layout/footer/atlas-768.webp" type="image/webp">
+												<source media="(max-width: 1280px)" srcset="./assets/img/layout/footer/atlas-1280.webp" type="image/webp">
+												<img alt="" width="96" height="32" loading="lazy" decoding="async" src="./assets/img/layout/footer/atlas.webp">
+											</picture>
+										</figure>
+										<p>
+											Розроблено за підтримки
+											<strong>Atlas Network</strong>
+										</p>
+									</div>
+									<small class="footer-bottom__copyright">© 2026 Інститут економічних досліджень та політичних консультацій</small>
+								</div>
+								<p class="footer-bottom__dev">
+									Розробка сайту -
+									<strong>Activemedia</strong>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>

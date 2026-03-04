@@ -1,0 +1,860 @@
+<!doctype html>
+<html lang="uk">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+		<link rel="preload" href="./assets/fonts/NunitoSans-Variable.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/NunitoSans-Italic-Variable.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/Manrope-Variable.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="shortcut icon" href="./assets/favicon/favicon.ico">
+		<meta name="keywords" content="IED Keywords">
+		<meta name="description" content="IED Description">
+		<title>Products Inner | IED</title>
+		<script type="module" crossorigin="" src="./js/vendor.min.js?v=1772616850015"></script>
+		<script type="module" crossorigin="" src="./js/app.min.js?v=1772616850015"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/style.min.css?v=1772616850015">
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header">
+				<div class="header__container container">
+					<div class="header__wrap">
+						<div class="header__row">
+							<a href="/" class="header__logo">
+								<picture>
+									<source media="(max-width: 768px)" srcset="./assets/img/logo-768.webp" type="image/webp">
+									<source media="(max-width: 1280px)" srcset="./assets/img/logo-1280.webp" type="image/webp">
+									<img alt="IED Logo, to the homepage" width="260" height="88" fetchpriority="high" src="./assets/img/logo.webp">
+								</picture>
+							</a>
+							<div class="header__menus">
+								<nav class="header__top-nav top-nav">
+									<div class="top-nav__row">
+										<ul class="top-nav__menu">
+											<li>
+												<a href="/" data-variant="green">Економіка</a>
+											</li>
+											<li>
+												<a href="/" data-variant="blue">Євроінтеграція</a>
+												<div class="top-nav__sublist nav-sublist">
+													<div class="nav-sublist__body">
+														<ul class="nav-sublist__menu">
+															<li>
+																<a href="/">Національна програма адаптації</a>
+															</li>
+															<li>
+																<a href="/">ВВП</a>
+															</li>
+															<li>
+																<a href="/">Інфляція</a>
+															</li>
+															<li>
+																<a href="/">Держборг</a>
+															</li>
+															<li>
+																<a href="/">План України</a>
+															</li>
+															<li>
+																<a href="/">Експорт</a>
+															</li>
+														</ul>
+													</div>
+													<div class="nav-sublist__footer">
+														<a href="#" class="nav-sublist__link-more">Дивитись всі</a>
+													</div>
+												</div>
+											</li>
+											<li>
+												<a href="/" data-variant="yellow">Бізнес-клімат</a>
+											</li>
+											<li>
+												<a href="/" data-variant="orange">Відбудова</a>
+											</li>
+											<li>
+												<a href="/" data-variant="purple">Субгрантинг</a>
+											</li>
+										</ul>
+										<button class="top-nav__search-btn" aria-label="Search" data-popup-trigger="search">
+											<i class="icon-search" aria-hidden="true"></i>
+										</button>
+									</div>
+								</nav>
+								<nav class="header__bottom-nav bottom-nav">
+									<div class="bottom-nav__row">
+										<ul class="bottom-nav__menu">
+											<li>
+												<div class="bottom-nav__dropdown nav-dropdown">
+													<button class="nav-dropdown__btn" data-popup-trigger="about">
+														<span>Про нас</span>
+													</button>
+													<div class="nav-dropdown__popup" data-popup="about">
+														<ul class="nav-dropdown__list">
+															<li>
+																<button class="nav-dropdown__btn">
+																	<span>Про нас</span>
+																</button>
+															</li>
+															<li>
+																<a href="/">Команда</a>
+															</li>
+															<li>
+																<a href="/">Вакансії</a>
+															</li>
+															<li>
+																<a href="/">Контакти</a>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</li>
+											<li>
+												<a href="/">Новини</a>
+											</li>
+											<li>
+												<a href="/">Події</a>
+											</li>
+											<li>
+												<a href="/">Продукти</a>
+											</li>
+											<li>
+												<a href="/">Проєкти</a>
+											</li>
+											<li>
+												<a href="/">Бази даних</a>
+											</li>
+											<li>
+												<a href="/">ІЕД в медіа</a>
+											</li>
+											<li>
+												<div class="bottom-nav__dropdown nav-dropdown">
+													<button class="nav-dropdown__burger" data-popup-trigger="burger">
+														<span aria-hidden="true"></span>
+														<span aria-hidden="true"></span>
+														<span aria-hidden="true"></span>
+													</button>
+													<div class="nav-dropdown__popup" data-popup="burger">
+														<ul class="nav-dropdown__list">
+															<li>
+																<button class="nav-dropdown__burger">
+																	<span aria-hidden="true"></span>
+																	<span aria-hidden="true"></span>
+																	<span aria-hidden="true"></span>
+																</button>
+															</li>
+															<li>
+																<a href="/">Донори</a>
+															</li>
+															<li>
+																<a href="/">Партнери</a>
+															</li>
+															<li>
+																<a href="/">Оголошення</a>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</li>
+										</ul>
+										<div class="lang-select" data-lang-select="">
+											<button type="button" class="lang-select__toggle" id="lang-select-button" aria-haspopup="listbox" aria-expanded="false" aria-controls="lang-select-list" data-lang-select-toggle="">UA</button>
+											<div class="lang-select__popup" id="lang-select-popup" data-lang-select-popup="">
+												<ul class="lang-select__list" id="lang-select-list" role="listbox" tabindex="-1" aria-labelledby="lang-select-button" data-lang-select-list="">
+													<li class="lang-select__option" role="option" data-lang-select-code="en" aria-selected="true" tabindex="0">ENG</li>
+													<li class="lang-select__option" role="option" data-lang-select-code="uk" aria-selected="false" tabindex="0">UA</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</nav>
+							</div>
+						</div>
+						<div class="header__top header-top">
+							<div class="header-top__row">
+								<a href="/" class="header-top__logo">
+									<picture>
+										<source media="(max-width: 768px)" srcset="./assets/img/logo-768.webp" type="image/webp">
+										<source media="(max-width: 1280px)" srcset="./assets/img/logo-1280.webp" type="image/webp">
+										<img alt="IED Logo, to the homepage" width="108" height="37" fetchpriority="high" src="./assets/img/logo.webp">
+									</picture>
+								</a>
+								<ul class="header-top__list">
+									<li>
+										<button class="header-top__search-btn" aria-label="Search" data-popup-trigger="search">
+											<i class="icon-search" aria-hidden="true"></i>
+										</button>
+									</li>
+									<li>
+										<div class="lang-select" data-lang-select="">
+											<button type="button" class="lang-select__toggle" id="lang-select-button" aria-haspopup="listbox" aria-expanded="false" aria-controls="lang-select-list" data-lang-select-toggle="">UA</button>
+											<div class="lang-select__popup" id="lang-select-popup" data-lang-select-popup="">
+												<ul class="lang-select__list" id="lang-select-list" role="listbox" tabindex="-1" aria-labelledby="lang-select-button" data-lang-select-list="">
+													<li class="lang-select__option" role="option" data-lang-select-code="en" aria-selected="true" tabindex="0">ENG</li>
+													<li class="lang-select__option" role="option" data-lang-select-code="uk" aria-selected="false" tabindex="0">UA</li>
+												</ul>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="header-top__menu menu" data-menu="">
+											<button class="menu__burger" data-menu-burger="">
+												<span aria-hidden="true"></span>
+												<span aria-hidden="true"></span>
+												<span aria-hidden="true"></span>
+											</button>
+											<div class="menu__popup" data-menu-body="">
+												<div class="menu__scroll-container">
+													<div class="menu__group">
+														<ul class="menu__list">
+															<li>
+																<a href="/">Про нас</a>
+																<button class="menu__arrow" data-menu-arrow="">
+																	<i class="icon-chevron-down" aria-hidden="true"></i>
+																</button>
+																<div class="menu__sublist">
+																	<div class="menu__sublist-inner">
+																		<ul class="menu__sublist-pad">
+																			<li>
+																				<a href="/">Команда</a>
+																			</li>
+																			<li>
+																				<a href="/">Вакансії</a>
+																			</li>
+																			<li>
+																				<a href="/">Контакти</a>
+																			</li>
+																		</ul>
+																	</div>
+																</div>
+															</li>
+															<li>
+																<a href="/">Новини</a>
+															</li>
+															<li>
+																<a href="/">Події</a>
+															</li>
+															<li>
+																<a href="/">Продукти</a>
+															</li>
+															<li>
+																<a href="/">Проєкти</a>
+															</li>
+															<li>
+																<a href="/">Бази даних</a>
+															</li>
+															<li>
+																<a href="/">ІЕД в медіа</a>
+															</li>
+														</ul>
+													</div>
+													<div class="menu__group">
+														<ul class="menu__list">
+															<li>
+																<a href="/">Донори</a>
+															</li>
+															<li>
+																<a href="/">Партнери</a>
+															</li>
+															<li>
+																<a href="/">Оголошення</a>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="header__bottom header-bottom">
+							<nav class="header-bottom__nav">
+								<ul class="header-bottom__menu">
+									<li>
+										<a href="/">Економіка</a>
+									</li>
+									<li>
+										<a href="/">Євроінтеграція</a>
+										<div class="header-bottom__sublist nav-sublist">
+											<div class="nav-sublist__body">
+												<ul class="nav-sublist__menu">
+													<li>
+														<a href="/">Національна програма адаптації</a>
+													</li>
+													<li>
+														<a href="/">ВВП</a>
+													</li>
+													<li>
+														<a href="/">Інфляція</a>
+													</li>
+													<li>
+														<a href="/">Держборг</a>
+													</li>
+													<li>
+														<a href="/">План України</a>
+													</li>
+													<li>
+														<a href="/">Експорт</a>
+													</li>
+												</ul>
+											</div>
+											<div class="nav-sublist__footer">
+												<a href="#" class="nav-sublist__link-more">Дивитись всі</a>
+											</div>
+										</div>
+									</li>
+									<li>
+										<a href="/">Бізнес-клімат</a>
+									</li>
+									<li>
+										<a href="/">Відбудова</a>
+									</li>
+									<li>
+										<a href="/">Субгрантинг</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</header>
+			<div class="header-search-popup" data-popup="search">
+				<div class="header-search-popup__backdrop" data-popup-close=""></div>
+				<div class="header-search-popup__inner">
+					<div class="header-search-popup__input input input--search">
+						<input type="text" placeholder="Пошук по сайту">
+					</div>
+				</div>
+			</div>
+			<main role="main">
+				<!-- Section 01: Main (done) -->
+				<section class="section-details _has-sticky" aria-labelledby="sectionNewsDetailsTitle">
+					<div class="section-details__decors section-decors section-decors--details" aria-hidden="true">
+						<img src="./assets/img/expert-commentary/main/bg/01.svg" alt="" loading="lazy" decoding="async" data-img-ignore="" class="section-decors__decor section-decors__decor--01">
+						<img src="./assets/img/expert-commentary/main/bg/02.svg" alt="" loading="lazy" decoding="async" data-img-ignore="" class="section-decors__decor section-decors__decor--02">
+						<img src="./assets/img/expert-commentary/main/bg/03.svg" alt="" loading="lazy" decoding="async" data-img-ignore="" class="section-decors__decor section-decors__decor--03">
+						<img src="./assets/img/expert-commentary/main/bg/04.svg" alt="" loading="lazy" decoding="async" data-img-ignore="" class="section-decors__decor section-decors__decor--04">
+						<img src="./assets/img/expert-commentary/main/bg/05.svg" alt="" loading="lazy" decoding="async" data-img-ignore="" class="section-decors__decor section-decors__decor--05">
+					</div>
+					<div class="section-details__container container">
+						<div class="section-details__wrap">
+							<nav class="section-details__breadcrumbs breadcrumbs" aria-label="Breadcrumb">
+								<ol class="breadcrumbs__list">
+									<li class="breadcrumbs__item">
+										<a href="/">Головна</a>
+									</li>
+									<li class="breadcrumbs__item">
+										<a href="/news.html">Новини</a>
+									</li>
+									<li class="breadcrumbs__item" aria-current="page">
+										<span>
+											Українська економіка напередодні URC2025 та нового бюджетного
+              циклу
+										</span>
+									</li>
+								</ol>
+							</nav>
+							<div class="section-details__row">
+								<div class="section-details__main">
+									<h2 class="section-details__title section-title section-title--sm" id="sectionNewsDetailsTitle">Українська економіка напередодні URC2025 та нового бюджетного циклу</h2>
+									<ul class="section-details__meta card-metas">
+										<li>
+											<ul class="card-metas__tags">
+												<li>
+													<span class="ui-tag" data-variant="green">Економіка</span>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<time datetime="2025-09-18" class="card-metas__date">18.09.2025</time>
+										</li>
+										<li>
+											<ul class="card-metas__hashtags">
+												<li>
+													<a href="#">#Фінанси</a>
+												</li>
+												<li>
+													<a href="#">#Бізнес</a>
+												</li>
+												<li>
+													<a href="#">#Економіка</a>
+												</li>
+												<li>
+													<a href="#">#Підприємництво</a>
+												</li>
+												<li>
+													<a href="#">#Інвестиції</a>
+												</li>
+											</ul>
+										</li>
+									</ul>
+									<figure class="section-details__img">
+										<picture>
+											<source media="(max-width: 768px)" srcset="./assets/img/products-inner/01-768.webp" type="image/webp">
+											<source media="(max-width: 1280px)" srcset="./assets/img/products-inner/01-1280.webp" type="image/webp">
+											<img alt="" width="1010" height="685" loading="lazy" decoding="async" src="./assets/img/products-inner/01.webp">
+										</picture>
+									</figure>
+									<!-- Product Info Card -->
+									<article class="section-details__product-info-card product-info-card">
+										<ul class="product-info-card__list">
+											<li class="product-info-card__item">
+												<h3 class="product-info-card__label">Тип продукту:</h3>
+												<div class="product-info-card__value">Публікація</div>
+											</li>
+											<li class="product-info-card__item">
+												<h3 class="product-info-card__label">Автор(и):</h3>
+												<ul class="product-info-card__authors">
+													<li>
+														<a href="#">Бураковський Ігор</a>
+													</li>
+													<li>
+														<a href="#">Кузяків Оксана</a>
+													</li>
+												</ul>
+											</li>
+											<li class="product-info-card__item">
+												<h3 class="product-info-card__label">Дата:</h3>
+												<time class="product-info-card__value" datetime="2025-12-12">12 грудня 2025 року</time>
+											</li>
+										</ul>
+									</article>
+									<div class="section-details__desc-text desc-text">
+										<p>
+											Незважаючи на збільшення тарифних квот після завершення дії
+              автономних торговельних заходів (ATMs) з ЄС, Україна має почати
+              шукати додаткові інструменти стимулювання експорту. Одним із таких
+              кроків є укладення ACAA — Угоди про оцінку відповідності та
+              прийнятності промислової продукції, яку часто називають
+              «промисловим безвізом». Про це нещодавно йшлося на заході
+              «Торгівля Україна-ЄС: між доступом до ринку та інтеграцією
+              правил».
+										</p>
+										<p>
+											«Потенційний виграш для України може становити від 0,6% до 1,1%
+              експорту до ЄС порівняно з базовим 2024 роком, якщо ми підпишемо
+              ACAA за трьома секторами. Якщо ж ACAA буде підписана для всіх
+              секторів, які увійшли до Угоди про асоціацію, виграш зросте втричі
+              — до 1,7–2,7%», — заявила директорка з наукової роботи Інституту
+              економічних досліджень та політичних консультацій (ІЕД) Вероніка
+              Мовчан.
+										</p>
+										<p>
+											Першими для ACAA визначено три сектори: низьковольтне електричне
+              обладнання, електромагнітна сумісність, безпека машин. Загалом
+              Угода про асоціацію між Україною та ЄС передбачає можливість
+              підписання ACAA щодо 27 секторів.
+										</p>
+										<p>
+											ACAA надасть Україні доступ товарів певних секторів на ринок ЄС
+              без додаткових процедур оцінки відповідності. Передбачається
+              взаємне визнання сертифікатів відповідності: сертифікат, виданий в
+              Україні, автоматично визнаватиметься в ЄС. Це має призвести до
+              спрощення та здешевлення експорту, оскільки не потрібно буде
+              проходити повторні оцінки в європейських органах.
+										</p>
+										<p>
+											Нині товари «3-ACAA» становлять 12% українського експорту до ЄС, а
+              товари «27-ACAA», зокрема будівельні матеріали, — 32%. При цьому
+              74% усього українського експорту товарів з пулу «27-ACAA» вже
+              постачаються до ЄС.
+										</p>
+										<p>
+											«ACAA — це унікальна угода, адже країна фактично погоджується
+              прийняти норми, правила, інституції та процедури ЄС як свої
+              внутрішні. У випадку України це цілком логічно, особливо зараз,
+              коли ми говоримо про членство в ЄС: цей процес природно вписується
+              у ширший курс на повну інтеграцію до Європейського Союзу», —
+              заявила Вероніка Мовчан.
+										</p>
+										<p>
+											Нагадуємо, що, згідно зі спільною оцінкою ІЕД і German Economic
+              Team (GET), через завершення ATMs український експорт до ЄС
+              скоротиться на $1,144 млрд у річному вимірі, навіть попри
+              розширення Євросоюзом окремих тарифних квот. Загальні втрати
+              експорту, завдяки переорієнтації товарних потоків в інші регіони,
+              зменшаться до $253 млн, або 0,6% експорту.
+										</p>
+										<p>
+											Щодо ACAA, то Україна має досягти відповідності нормам і
+              процедурам ЄС у п'яти сферах інфраструктури якості:
+										</p>
+										<ul>
+											<li>стандартизація</li>
+											<li>метрологія</li>
+											<li>акредитація</li>
+											<li>оцінка відповідності</li>
+											<li>ринковий нагляд</li>
+										</ul>
+										<p>
+											Станом на зараз ЄС має ACAA лише з Ізраїлем і запропонував
+              підписання низці інших країн, зокрема Україні, Грузії, Молдові,
+              Тунісу, Єгипту, Марокко та Йорданії.
+										</p>
+										<p>
+											«Окрім прямого приросту обсягів поставок, ACAA означає спрощення
+              виходу на ринок ЄС для нових продуктів та нових компаній. Для
+              малих і середніх підприємств це особливо важливо, адже для них
+              неможливий ефект масштабу, характерний для великих компаній», —
+              резюмувала Вероніка Мовчан.
+										</p>
+										<p>
+											Заступниця керівника програми GIZ STEP IN 2 EU Анне Берціо вважає,
+              що в 2026 році процес підготовки до угоди ACAA буде вирішальним.
+              «Це не просто питання гармонізації й перекладу певних стандартів,
+              це вимагає від України прискорення багатьох змін, які потрібно
+              впровадити», — зазначила Анне Берціо.
+										</p>
+									</div>
+									<div class="section-details__extra">
+										<article class="section-details__project-box project-box" aria-labelledby="projectBoxTitle">
+											<div class="project-box__top">
+												<h3 class="project-box__title" id="projectBoxTitle">Проєкт ІЕД</h3>
+												<a href="#" class="project-box__link">Вплив «ЧЕРГИ» на прикордонну логістику та громади</a>
+												<div class="project-box__desc-text">
+													<p>
+														Оцінити вплив впровадження системи електронної черги «єЧерга» на
+        ефективність логістики та соціально-економічну ситуацію в прикордонних
+        громадах.
+													</p>
+												</div>
+											</div>
+											<div class="project-box__bottom">
+												<h4 class="project-box__files-title">Файли для завантаження</h4>
+												<ul class="project-box__files">
+													<li>
+														<a href="files/pdf/placeholder.pdf" download="">
+															<span>Презентація.pdf (2МБ)</span>
+															<i class="icon-download"></i>
+														</a>
+													</li>
+													<li>
+														<a href="files/pdf/placeholder.pdf" download="">
+															<span>Презентація 2.pdf (2МБ)</span>
+															<i class="icon-download"></i>
+														</a>
+													</li>
+													<li>
+														<a href="files/pdf/placeholder.pdf" download="">
+															<span>Документ.pdf (569КБ)</span>
+															<i class="icon-download"></i>
+														</a>
+													</li>
+													<li>
+														<a href="files/pdf/placeholder.pdf" download="">
+															<span>Таблиця.pdf (477КБ)</span>
+															<i class="icon-download"></i>
+														</a>
+													</li>
+												</ul>
+											</div>
+										</article>
+										<div class="section-details__share share-row">
+											<span class="share-row__label">Поділитись:</span>
+											<ul class="share-row__list">
+												<li>
+													<a href="#" aria-label="Facebook">
+														<i class="icon-facebook"></i>
+													</a>
+												</li>
+												<li>
+													<a href="#" aria-label="X">
+														<i class="icon-twitter-x"></i>
+													</a>
+												</li>
+												<li>
+													<a href="#" aria-label="LinkedIn">
+														<i class="icon-linkedin"></i>
+													</a>
+												</li>
+												<li>
+													<a href="#" aria-label="Telegram">
+														<i class="icon-telegram"></i>
+													</a>
+												</li>
+												<li>
+													<a href="#" aria-label="Instagram">
+														<i class="icon-instagram"></i>
+													</a>
+												</li>
+												<li>
+													<a href="#" aria-label="Viber">
+														<i class="icon-viber"></i>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<aside class="section-details__aside">
+									<h3 class="section-details__aside-title">Останні продукти</h3>
+									<ul class="section-details__aside-articles">
+										<li>
+											<article class="article-preview">
+												<ul class="article-preview__metas card-metas">
+													<li>
+														<time datetime="2025-09-18" class="card-metas__date">18.09.2025</time>
+													</li>
+													<li>
+														<ul class="card-metas__hashtags">
+															<li>
+																<a href="#">#Економіка</a>
+															</li>
+														</ul>
+													</li>
+												</ul>
+												<h3 class="article-preview__title">
+													<a href="/">89% підприємців назвали завершення війни ключовою умовою...</a>
+												</h3>
+											</article>
+										</li>
+										<li>
+											<article class="article-preview">
+												<ul class="article-preview__metas card-metas">
+													<li>
+														<time datetime="2025-09-18" class="card-metas__date">18.09.2025</time>
+													</li>
+													<li>
+														<ul class="card-metas__hashtags">
+															<li>
+																<a href="#">#Фінанси</a>
+															</li>
+														</ul>
+													</li>
+												</ul>
+												<h3 class="article-preview__title">
+													<a href="/">Темпи приросту реального ВВП в серпні 2025 року прискорились до 8%</a>
+												</h3>
+											</article>
+										</li>
+										<li>
+											<article class="article-preview">
+												<ul class="article-preview__metas card-metas">
+													<li>
+														<time datetime="2025-09-18" class="card-metas__date">18.09.2025</time>
+													</li>
+													<li>
+														<ul class="card-metas__hashtags">
+															<li>
+																<a href="#">#Бізнес</a>
+															</li>
+														</ul>
+													</li>
+												</ul>
+												<h3 class="article-preview__title">
+													<a href="/">
+														Європейське антимонопольне законодавство допоможе заощаджувати до 1,8 млрд євро...
+													</a>
+												</h3>
+											</article>
+										</li>
+										<li>
+											<article class="article-preview">
+												<ul class="article-preview__metas card-metas">
+													<li>
+														<time datetime="2025-09-18" class="card-metas__date">18.09.2025</time>
+													</li>
+													<li>
+														<ul class="card-metas__hashtags">
+															<li>
+																<a href="#">#Підприємництво</a>
+															</li>
+														</ul>
+													</li>
+												</ul>
+												<h3 class="article-preview__title">
+													<a href="/">
+														Українська національна платформа Форуму громадянського суспільства Східного Партнерства разом з ІЕД провела дискусію, присвячену підсумкам URC2025
+													</a>
+												</h3>
+											</article>
+										</li>
+										<li>
+											<article class="article-preview">
+												<ul class="article-preview__metas card-metas">
+													<li>
+														<time datetime="2025-09-18" class="card-metas__date">18.09.2025</time>
+													</li>
+													<li>
+														<ul class="card-metas__hashtags">
+															<li>
+																<a href="#">#Інвестиції</a>
+															</li>
+														</ul>
+													</li>
+												</ul>
+												<h3 class="article-preview__title">
+													<a href="/">Найповільніше реформується на шляху євроінтеграції залізниця</a>
+												</h3>
+											</article>
+										</li>
+									</ul>
+								</aside>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+			<footer class="footer" role="contentinfo">
+				<div class="footer__top footer-top">
+					<div class="footer-top__container container">
+						<div class="footer-top__wrap">
+							<div class="footer-top__row">
+								<div class="footer-top__brand">
+									<a href="/" class="footer-top__logo" aria-label="ІЕД">
+										<img src="./assets/img/layout/footer-logo.svg" alt="ІНСТИТУТ ЕКОНОМІЧНИХ досліджень ТА ПОЛІТИЧНИХ КОНСУЛЬТАЦІЙ" width="400" height="68" loading="lazy" decoding="async">
+									</a>
+									<ul class="footer-top__contacts">
+										<li>
+											<i class="icon-map-pin" aria-hidden="true"></i>
+											<span>вул. Рейтарська 8/5-А, 01054 Київ, Україна</span>
+										</li>
+										<li>
+											<i class="icon-phone" aria-hidden="true"></i>
+											<span>
+												<a href="tel:+380442786342">+38 044 278-63-42</a>
+												,
+												<a href="tel:+380442786360">+38 044 278-63-60</a>
+											</span>
+										</li>
+										<li>
+											<i class="icon-mail" aria-hidden="true"></i>
+											<a href="mailto:institute@ier.kyiv.ua">institute@ier.kyiv.ua</a>
+										</li>
+									</ul>
+									<a href="#" class="footer-top__old-version">
+										<i class="icon-globe" aria-hidden="true"></i>
+										<span>Попередня версія сайту</span>
+									</a>
+								</div>
+								<nav class="footer-top__menus" aria-label="Footer navigation">
+									<ul class="footer-top__menu">
+										<li>
+											<a href="#">Про нас</a>
+										</li>
+										<li>
+											<a href="#">Новини</a>
+										</li>
+										<li>
+											<a href="#">Події</a>
+										</li>
+										<li>
+											<a href="#">Публікації</a>
+										</li>
+										<li>
+											<a href="#">Проєкти</a>
+										</li>
+									</ul>
+									<ul class="footer-top__menu">
+										<li>
+											<a href="#">ІЕД в медіа</a>
+										</li>
+										<li>
+											<a href="#">Оголошення</a>
+										</li>
+										<li>
+											<a href="#">Вакансії</a>
+										</li>
+										<li>
+											<a href="#">Партнери</a>
+										</li>
+										<li>
+											<a href="#">База даних</a>
+										</li>
+									</ul>
+									<ul class="footer-top__menu">
+										<li>
+											<a href="#" data-variant="green">Економіка</a>
+										</li>
+										<li>
+											<a href="#" data-variant="blue">Євроінтеграція</a>
+										</li>
+										<li>
+											<a href="#" data-variant="yellow">Бізнес-клімат</a>
+										</li>
+										<li>
+											<a href="#" data-variant="orange">Відбудова</a>
+										</li>
+										<li>
+											<a href="#" data-variant="purple">Субгрантинг</a>
+										</li>
+									</ul>
+								</nav>
+								<div class="footer-top__subscribe">
+									<ul class="footer-top__soc" aria-label="Соціальні мережі">
+										<li>
+											<a href="#" aria-label="Facebook">
+												<i class="icon-facebook" aria-hidden="true"></i>
+											</a>
+										</li>
+										<li>
+											<a href="#" aria-label="X">
+												<i class="icon-twitter-x" aria-hidden="true"></i>
+											</a>
+										</li>
+										<li>
+											<a href="#" aria-label="LinkedIn">
+												<i class="icon-linkedin" aria-hidden="true"></i>
+											</a>
+										</li>
+										<li>
+											<a href="#" aria-label="Telegram">
+												<i class="icon-telegram" aria-hidden="true"></i>
+											</a>
+										</li>
+										<li>
+											<a href="#" aria-label="Instagram">
+												<i class="icon-instagram" aria-hidden="true"></i>
+											</a>
+										</li>
+										<li>
+											<a href="#" aria-label="Viber">
+												<i class="icon-viber" aria-hidden="true"></i>
+											</a>
+										</li>
+									</ul>
+									<form class="footer-top__form footer-form" action="#" method="post">
+										<p class="footer-form__title">Залиште свій e-mail та отримуйте новини:</p>
+										<label class="footer-form__input input">
+											<span class="sr-only">E-mail</span>
+											<input type="email" value="kontstantinopolsky@gmail.com" placeholder="E-mail">
+										</label>
+										<button type="submit" data-variant="blue" data-size="sm" class="footer-form__btn btn">Підписатися</button>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer__bottom footer-bottom">
+					<div class="footer-bottom__container container">
+						<div class="footer-bottom__wrap">
+							<div class="footer-bottom__row">
+								<div class="footer-bottom__meta">
+									<div class="footer-bottom__atlas">
+										<figure>
+											<picture>
+												<source media="(max-width: 768px)" srcset="./assets/img/layout/footer/atlas-768.webp" type="image/webp">
+												<source media="(max-width: 1280px)" srcset="./assets/img/layout/footer/atlas-1280.webp" type="image/webp">
+												<img alt="" width="96" height="32" loading="lazy" decoding="async" src="./assets/img/layout/footer/atlas.webp">
+											</picture>
+										</figure>
+										<p>
+											Розроблено за підтримки
+											<strong>Atlas Network</strong>
+										</p>
+									</div>
+									<small class="footer-bottom__copyright">© 2026 Інститут економічних досліджень та політичних консультацій</small>
+								</div>
+								<p class="footer-bottom__dev">
+									Розробка сайту -
+									<strong>Activemedia</strong>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>

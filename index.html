@@ -1,0 +1,1559 @@
+<!doctype html>
+<html lang="uk">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+		<link rel="preload" href="./assets/fonts/NunitoSans-Variable.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/NunitoSans-Italic-Variable.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/Manrope-Variable.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="shortcut icon" href="./assets/favicon/favicon.ico">
+		<meta name="keywords" content="ProjectName Keywords">
+		<meta name="description" content="ProjectName Description">
+		<title>IED</title>
+		<script type="module" crossorigin="" src="./js/vendor.min.js?v=1772616850015"></script>
+		<script type="module" crossorigin="" src="./js/app.min.js?v=1772616850015"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/style.min.css?v=1772616850015">
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header">
+				<div class="header__container container">
+					<div class="header__wrap">
+						<div class="header__row">
+							<a href="/" class="header__logo">
+								<picture>
+									<source media="(max-width: 768px)" srcset="./assets/img/logo-768.webp" type="image/webp">
+									<source media="(max-width: 1280px)" srcset="./assets/img/logo-1280.webp" type="image/webp">
+									<img alt="IED Logo, to the homepage" width="260" height="88" fetchpriority="high" src="./assets/img/logo.webp">
+								</picture>
+							</a>
+							<div class="header__menus">
+								<nav class="header__top-nav top-nav">
+									<div class="top-nav__row">
+										<ul class="top-nav__menu">
+											<li>
+												<a href="/" data-variant="green">Економіка</a>
+											</li>
+											<li>
+												<a href="/" data-variant="blue">Євроінтеграція</a>
+												<div class="top-nav__sublist nav-sublist">
+													<div class="nav-sublist__body">
+														<ul class="nav-sublist__menu">
+															<li>
+																<a href="/">Національна програма адаптації</a>
+															</li>
+															<li>
+																<a href="/">ВВП</a>
+															</li>
+															<li>
+																<a href="/">Інфляція</a>
+															</li>
+															<li>
+																<a href="/">Держборг</a>
+															</li>
+															<li>
+																<a href="/">План України</a>
+															</li>
+															<li>
+																<a href="/">Експорт</a>
+															</li>
+														</ul>
+													</div>
+													<div class="nav-sublist__footer">
+														<a href="#" class="nav-sublist__link-more">Дивитись всі</a>
+													</div>
+												</div>
+											</li>
+											<li>
+												<a href="/" data-variant="yellow">Бізнес-клімат</a>
+											</li>
+											<li>
+												<a href="/" data-variant="orange">Відбудова</a>
+											</li>
+											<li>
+												<a href="/" data-variant="purple">Субгрантинг</a>
+											</li>
+										</ul>
+										<button class="top-nav__search-btn" aria-label="Search" data-popup-trigger="search">
+											<i class="icon-search" aria-hidden="true"></i>
+										</button>
+									</div>
+								</nav>
+								<nav class="header__bottom-nav bottom-nav">
+									<div class="bottom-nav__row">
+										<ul class="bottom-nav__menu">
+											<li>
+												<div class="bottom-nav__dropdown nav-dropdown">
+													<button class="nav-dropdown__btn" data-popup-trigger="about">
+														<span>Про нас</span>
+													</button>
+													<div class="nav-dropdown__popup" data-popup="about">
+														<ul class="nav-dropdown__list">
+															<li>
+																<button class="nav-dropdown__btn">
+																	<span>Про нас</span>
+																</button>
+															</li>
+															<li>
+																<a href="/">Команда</a>
+															</li>
+															<li>
+																<a href="/">Вакансії</a>
+															</li>
+															<li>
+																<a href="/">Контакти</a>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</li>
+											<li>
+												<a href="/">Новини</a>
+											</li>
+											<li>
+												<a href="/">Події</a>
+											</li>
+											<li>
+												<a href="/">Продукти</a>
+											</li>
+											<li>
+												<a href="/">Проєкти</a>
+											</li>
+											<li>
+												<a href="/">Бази даних</a>
+											</li>
+											<li>
+												<a href="/">ІЕД в медіа</a>
+											</li>
+											<li>
+												<div class="bottom-nav__dropdown nav-dropdown">
+													<button class="nav-dropdown__burger" data-popup-trigger="burger">
+														<span aria-hidden="true"></span>
+														<span aria-hidden="true"></span>
+														<span aria-hidden="true"></span>
+													</button>
+													<div class="nav-dropdown__popup" data-popup="burger">
+														<ul class="nav-dropdown__list">
+															<li>
+																<button class="nav-dropdown__burger">
+																	<span aria-hidden="true"></span>
+																	<span aria-hidden="true"></span>
+																	<span aria-hidden="true"></span>
+																</button>
+															</li>
+															<li>
+																<a href="/">Донори</a>
+															</li>
+															<li>
+																<a href="/">Партнери</a>
+															</li>
+															<li>
+																<a href="/">Оголошення</a>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</li>
+										</ul>
+										<div class="lang-select" data-lang-select="">
+											<button type="button" class="lang-select__toggle" id="lang-select-button" aria-haspopup="listbox" aria-expanded="false" aria-controls="lang-select-list" data-lang-select-toggle="">UA</button>
+											<div class="lang-select__popup" id="lang-select-popup" data-lang-select-popup="">
+												<ul class="lang-select__list" id="lang-select-list" role="listbox" tabindex="-1" aria-labelledby="lang-select-button" data-lang-select-list="">
+													<li class="lang-select__option" role="option" data-lang-select-code="en" aria-selected="true" tabindex="0">ENG</li>
+													<li class="lang-select__option" role="option" data-lang-select-code="uk" aria-selected="false" tabindex="0">UA</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</nav>
+							</div>
+						</div>
+						<div class="header__top header-top">
+							<div class="header-top__row">
+								<a href="/" class="header-top__logo">
+									<picture>
+										<source media="(max-width: 768px)" srcset="./assets/img/logo-768.webp" type="image/webp">
+										<source media="(max-width: 1280px)" srcset="./assets/img/logo-1280.webp" type="image/webp">
+										<img alt="IED Logo, to the homepage" width="108" height="37" fetchpriority="high" src="./assets/img/logo.webp">
+									</picture>
+								</a>
+								<ul class="header-top__list">
+									<li>
+										<button class="header-top__search-btn" aria-label="Search" data-popup-trigger="search">
+											<i class="icon-search" aria-hidden="true"></i>
+										</button>
+									</li>
+									<li>
+										<div class="lang-select" data-lang-select="">
+											<button type="button" class="lang-select__toggle" id="lang-select-button" aria-haspopup="listbox" aria-expanded="false" aria-controls="lang-select-list" data-lang-select-toggle="">UA</button>
+											<div class="lang-select__popup" id="lang-select-popup" data-lang-select-popup="">
+												<ul class="lang-select__list" id="lang-select-list" role="listbox" tabindex="-1" aria-labelledby="lang-select-button" data-lang-select-list="">
+													<li class="lang-select__option" role="option" data-lang-select-code="en" aria-selected="true" tabindex="0">ENG</li>
+													<li class="lang-select__option" role="option" data-lang-select-code="uk" aria-selected="false" tabindex="0">UA</li>
+												</ul>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="header-top__menu menu" data-menu="">
+											<button class="menu__burger" data-menu-burger="">
+												<span aria-hidden="true"></span>
+												<span aria-hidden="true"></span>
+												<span aria-hidden="true"></span>
+											</button>
+											<div class="menu__popup" data-menu-body="">
+												<div class="menu__scroll-container">
+													<div class="menu__group">
+														<ul class="menu__list">
+															<li>
+																<a href="/">Про нас</a>
+																<button class="menu__arrow" data-menu-arrow="">
+																	<i class="icon-chevron-down" aria-hidden="true"></i>
+																</button>
+																<div class="menu__sublist">
+																	<div class="menu__sublist-inner">
+																		<ul class="menu__sublist-pad">
+																			<li>
+																				<a href="/">Команда</a>
+																			</li>
+																			<li>
+																				<a href="/">Вакансії</a>
+																			</li>
+																			<li>
+																				<a href="/">Контакти</a>
+																			</li>
+																		</ul>
+																	</div>
+																</div>
+															</li>
+															<li>
+																<a href="/">Новини</a>
+															</li>
+															<li>
+																<a href="/">Події</a>
+															</li>
+															<li>
+																<a href="/">Продукти</a>
+															</li>
+															<li>
+																<a href="/">Проєкти</a>
+															</li>
+															<li>
+																<a href="/">Бази даних</a>
+															</li>
+															<li>
+																<a href="/">ІЕД в медіа</a>
+															</li>
+														</ul>
+													</div>
+													<div class="menu__group">
+														<ul class="menu__list">
+															<li>
+																<a href="/">Донори</a>
+															</li>
+															<li>
+																<a href="/">Партнери</a>
+															</li>
+															<li>
+																<a href="/">Оголошення</a>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="header__bottom header-bottom">
+							<nav class="header-bottom__nav">
+								<ul class="header-bottom__menu">
+									<li>
+										<a href="/">Економіка</a>
+									</li>
+									<li>
+										<a href="/">Євроінтеграція</a>
+										<div class="header-bottom__sublist nav-sublist">
+											<div class="nav-sublist__body">
+												<ul class="nav-sublist__menu">
+													<li>
+														<a href="/">Національна програма адаптації</a>
+													</li>
+													<li>
+														<a href="/">ВВП</a>
+													</li>
+													<li>
+														<a href="/">Інфляція</a>
+													</li>
+													<li>
+														<a href="/">Держборг</a>
+													</li>
+													<li>
+														<a href="/">План України</a>
+													</li>
+													<li>
+														<a href="/">Експорт</a>
+													</li>
+												</ul>
+											</div>
+											<div class="nav-sublist__footer">
+												<a href="#" class="nav-sublist__link-more">Дивитись всі</a>
+											</div>
+										</div>
+									</li>
+									<li>
+										<a href="/">Бізнес-клімат</a>
+									</li>
+									<li>
+										<a href="/">Відбудова</a>
+									</li>
+									<li>
+										<a href="/">Субгрантинг</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</header>
+			<div class="header-search-popup" data-popup="search">
+				<div class="header-search-popup__backdrop" data-popup-close=""></div>
+				<div class="header-search-popup__inner">
+					<div class="header-search-popup__input input input--search">
+						<input type="text" placeholder="Пошук по сайту">
+					</div>
+				</div>
+			</div>
+			<main role="main">
+				<!-- Section 01: Monitoring (done) -->
+				<section class="section-monitoring" aria-labelledby="sectionMonitoringTitle">
+					<div class="section-monitoring__decors" aria-hidden="true">
+						<img src="./assets/img/expert-commentary/main/bg/01.svg" alt="" loading="lazy" decoding="async" data-img-ignore="" class="section-monitoring__decor section-monitoring__decor--01">
+						<img src="./assets/img/expert-commentary/main/bg/02.svg" alt="" loading="lazy" decoding="async" data-img-ignore="" class="section-monitoring__decor section-monitoring__decor--02">
+						<img src="./assets/img/home/monitoring/bg/03.svg" alt="" loading="lazy" decoding="async" data-img-ignore="" class="section-monitoring__decor section-monitoring__decor--03">
+						<img src="./assets/img/home/monitoring/bg/04.svg" alt="" loading="lazy" decoding="async" data-img-ignore="" class="section-monitoring__decor section-monitoring__decor--04">
+					</div>
+					<div class="section-monitoring__container container">
+						<div class="section-monitoring__wrap">
+							<div class="section-monitoring__row">
+								<div class="section-monitoring__main">
+									<div class="section-monitoring__slider-wrap">
+										<div class="section-monitoring__slider swiper" id="monitoringSlider">
+											<div class="swiper-wrapper">
+												<div class="section-monitoring__slide swiper-slide">
+													<div class="monitoring-slide">
+														<figure class="monitoring-slide__img">
+															<picture>
+																<source media="(max-width: 768px)" srcset="./assets/img/home/hero/01-768.webp" type="image/webp">
+																<source media="(max-width: 1280px)" srcset="./assets/img/home/hero/01-1280.webp" type="image/webp">
+																<img alt="Моніторинг сприяння торгівлі" width="1010" height="685" src="./assets/img/home/hero/01.webp">
+															</picture>
+														</figure>
+														<div class="monitoring-slide__content">
+															<ul class="monitoring-slide__tags">
+																<li>
+																	<span class="ui-tag" data-variant="yellow">Бізнес-клімат</span>
+																</li>
+															</ul>
+															<h3 class="monitoring-slide__title">
+																Черговий випуск Інформаційного бюлетеня «Моніторинг
+                        сприяння торгівлі в Україні»
+															</h3>
+															<time datetime="2025-09-19" class="monitoring-slide__date">19.09.2025</time>
+														</div>
+													</div>
+												</div>
+												<div class="section-monitoring__slide swiper-slide">
+													<div class="monitoring-slide">
+														<figure class="monitoring-slide__img">
+															<picture>
+																<source media="(max-width: 768px)" srcset="./assets/img/home/hero/02-768.webp" type="image/webp">
+																<source media="(max-width: 1280px)" srcset="./assets/img/home/hero/02-1280.webp" type="image/webp">
+																<img alt="Моніторинг сприяння торгівлі" width="1010" height="685" src="./assets/img/home/hero/02.webp">
+															</picture>
+														</figure>
+														<div class="monitoring-slide__content">
+															<ul class="monitoring-slide__tags">
+																<li>
+																	<span class="ui-tag" data-variant="yellow">Бізнес-клімат</span>
+																</li>
+															</ul>
+															<h3 class="monitoring-slide__title">
+																Черговий випуск Інформаційного бюлетеня «Моніторинг
+                        сприяння торгівлі в Україні»
+															</h3>
+															<time datetime="2025-09-19" class="monitoring-slide__date">19.09.2025</time>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<button type="button" id="monitoringSliderPrev" aria-label="Попередній слайд" class="section-monitoring__nav section-monitoring__nav--prev">
+											<i class="icon-chevron-left" aria-hidden="true"></i>
+										</button>
+										<button type="button" id="monitoringSliderNext" aria-label="Наступний слайд" class="section-monitoring__nav section-monitoring__nav--next">
+											<i class="icon-chevron-right" aria-hidden="true"></i>
+										</button>
+										<div class="section-monitoring__pagination" id="monitoringSliderPagination"></div>
+									</div>
+								</div>
+								<div class="section-monitoring__aside">
+									<ul class="section-monitoring__articles">
+										<li>
+											<article class="article-preview article-preview--reversed">
+												<ul class="article-preview__metas card-metas">
+													<li>
+														<ul class="article-previews__tags">
+															<li>
+																<span class="ui-tag" data-variant="yellow">Бізнес-клімат</span>
+															</li>
+														</ul>
+													</li>
+													<li>
+														<time datetime="" class="card-metas__date">18.09.2025</time>
+													</li>
+												</ul>
+												<h3 class="article-preview__title">
+													<a href="">
+														89% підприємців назвали завершення війни ключовою умовою для розвитку бізнесу...
+													</a>
+												</h3>
+											</article>
+										</li>
+										<li>
+											<article class="article-preview article-preview--reversed">
+												<ul class="article-preview__metas card-metas">
+													<li>
+														<ul class="article-previews__tags">
+															<li>
+																<span class="ui-tag" data-variant="purple">Субгрантинг</span>
+															</li>
+														</ul>
+													</li>
+													<li>
+														<time datetime="" class="card-metas__date">18.09.2025</time>
+													</li>
+												</ul>
+												<h3 class="article-preview__title">
+													<a href="">Темпи приросту реального ВВП в серпні 2025 року прискорились до 8%</a>
+												</h3>
+											</article>
+										</li>
+										<li>
+											<article class="article-preview article-preview--reversed">
+												<ul class="article-preview__metas card-metas">
+													<li>
+														<ul class="article-previews__tags">
+															<li>
+																<span class="ui-tag" data-variant="blue">Євроінтеграція</span>
+															</li>
+														</ul>
+													</li>
+													<li>
+														<time datetime="" class="card-metas__date">18.09.2025</time>
+													</li>
+												</ul>
+												<h3 class="article-preview__title">
+													<a href="">
+														Європейське антимонопольне законодавство допоможе заощаджувати до 1,8 млрд євро...
+													</a>
+												</h3>
+											</article>
+										</li>
+									</ul>
+									<a href="#" class="btn w-full" data-variant="primary">
+										<span>дивитись більше</span>
+										<i class="icon-btn-arrow" aria-hidden="true"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- Section 02: Projects (done) -->
+				<section class="section-projects" aria-labelledby="sectionProjectsTitle">
+					<div class="section-projects__container container">
+						<div class="section-projects__wrap">
+							<div class="section-projects__header">
+								<h2 class="section-projects__title" id="sectionProjectsTitle">Проєкти ІЕД</h2>
+							</div>
+							<div class="section-projects__body">
+								<ul class="section-projects__cards">
+									<li>
+										<article class="project-card">
+											<div class="project-card__header">
+												<h3 class="project-card__title">Вплив єЧерги на прикордонну логістику та громади</h3>
+											</div>
+											<div class="project-card__body">
+												<div class="project-card__desc-text">
+													<p>
+														Оцінити вплив впровадження системи електронної черги (єЧерга) на ефективність логістики та соціально-економічну ситуацію в прикордонних громадах.
+													</p>
+												</div>
+											</div>
+											<div class="project-card__footer">
+												<ul class="project-card__metas card-metas">
+													<li>
+														<ul class="card-metas__tags">
+															<li>
+																<span class="ui-tag" data-variant="green">Економіка</span>
+															</li>
+															<li>
+																<span class="ui-tag" data-variant="yellow">Бізнес-клімат</span>
+															</li>
+														</ul>
+													</li>
+													<li>
+														<time datetime="#" class="card-metas__date">19.09.2025</time>
+													</li>
+												</ul>
+											</div>
+										</article>
+									</li>
+									<li>
+										<article class="project-card">
+											<div class="project-card__header">
+												<h3 class="project-card__title">Спільне майбутнє. Польща та Україна на єдиному європейському ринку</h3>
+											</div>
+											<div class="project-card__body">
+												<div class="project-card__desc-text">
+													<p>
+														Поглибити взаєморозуміння між Україною та Польщею в контексті вступу України до ЄС шляхом створення експертної бази, напрацювання рішень і платформи для діалогу.
+													</p>
+												</div>
+											</div>
+											<div class="project-card__footer">
+												<ul class="project-card__metas card-metas">
+													<li>
+														<ul class="card-metas__tags">
+															<li>
+																<span class="ui-tag" data-variant="blue">Євроінтеграція</span>
+															</li>
+														</ul>
+													</li>
+													<li>
+														<time datetime="#" class="card-metas__date">19.09.2025</time>
+													</li>
+												</ul>
+											</div>
+										</article>
+									</li>
+									<li>
+										<article class="project-card">
+											<div class="project-card__header">
+												<h3 class="project-card__title">Перспективи України</h3>
+											</div>
+											<div class="project-card__body">
+												<div class="project-card__desc-text">
+													<p>
+														Сприяти розробці більш ефективних та стійких німецьких стратегій щодо реформ в Україні
+													</p>
+												</div>
+											</div>
+											<div class="project-card__footer">
+												<ul class="project-card__metas card-metas">
+													<li>
+														<ul class="card-metas__tags">
+															<li>
+																<span class="ui-tag" data-variant="blue">Євроінтеграція</span>
+															</li>
+															<li>
+																<span class="ui-tag" data-variant="purple">Субгрантинг</span>
+															</li>
+															<li>
+																<span class="ui-tag" data-variant="green">Економіка</span>
+															</li>
+														</ul>
+													</li>
+													<li>
+														<time datetime="#" class="card-metas__date">19.09.2025</time>
+													</li>
+												</ul>
+											</div>
+										</article>
+									</li>
+									<li>
+										<article class="project-card">
+											<div class="project-card__header">
+												<h3 class="project-card__title">Шлях України до Європейського Союзу. Досвід вступу Польщі</h3>
+											</div>
+											<div class="project-card__body">
+												<div class="project-card__desc-text">
+													<p>
+														Підтримка підготовку України до майбутнього членства в ЄС шляхом обговорення досвіду польських підприємців
+													</p>
+												</div>
+											</div>
+											<div class="project-card__footer">
+												<ul class="project-card__metas card-metas">
+													<li>
+														<ul class="card-metas__tags">
+															<li>
+																<span class="ui-tag" data-variant="green">Економіка</span>
+															</li>
+														</ul>
+													</li>
+													<li>
+														<time datetime="#" class="card-metas__date">19.09.2025</time>
+													</li>
+												</ul>
+											</div>
+										</article>
+									</li>
+								</ul>
+							</div>
+							<div class="section-projects__footer">
+								<a href="#" class="section-projects__btn btn" data-variant="primary" data-size="lg">
+									<span>дивитись більше</span>
+									<i class="icon-btn-arrow" aria-hidden="true"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- Section 03: Databases (done) -->
+				<section class="section-databases" aria-labelledby="sectionDatabasesTitle">
+					<figure class="section-databases__bg" aria-hidden="true">
+						<img src="./assets/img/home/databases/bg.svg" alt="">
+					</figure>
+					<div class="section-databases__container container">
+						<div class="section-databases__wrap">
+							<div class="section-databases__content">
+								<div class="section-databases__header">
+									<h2 class="section-databases__title" id="sectionDatabasesTitle">Бази даних ІЕД</h2>
+								</div>
+								<div class="section-databases__body">
+									<div class="section-databases__desc-text">
+										<p>У якому стані знаходиться українська економіка?</p>
+										<p>Економіка з графіками та експертними коментарями.</p>
+										<p>Найважливіша інформація зрозумілою мовою.</p>
+									</div>
+								</div>
+								<div class="section-databases__footer">
+									<a href="#" class="section-databases__btn btn">
+										<span>Перейти до баз</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- Section 04: Products (done) -->
+				<section class="section-products" aria-labelledby="sectionProductsTitle">
+					<div class="section-products__container container">
+						<div class="section-products__wrap">
+							<div class="section-products__header">
+								<h2 class="section-products__title" id="sectionProductsTitle">Продукти</h2>
+							</div>
+							<div class="section-products__body">
+								<ul class="section-products__cards">
+									<li>
+										<article class="product-card" data-type="publication">
+											<!-- Media -->
+											<figure class="product-card__media">
+												<picture>
+													<source media="(max-width: 768px)" srcset="./assets/img/home/products/01-768.webp" type="image/webp">
+													<source media="(max-width: 1280px)" srcset="./assets/img/home/products/01-1280.webp" type="image/webp">
+													<img alt="Аналітика української економіки" width="480" height="360" loading="lazy" decoding="async" src="./assets/img/home/products/01.webp">
+												</picture>
+												<span class="product-card__category">Публікація</span>
+											</figure>
+											<div class="product-card__content">
+												<!-- Header -->
+												<div class="product-card__header">
+													<h3 class="product-card__title">Українська економіка напередодні URC2025 та нового бюджетного циклу</h3>
+												</div>
+												<!-- Body -->
+												<div class="product-card__body">
+													<p>
+														Український бізнес стикається зі зростаючою довгостроковою невизначеністю, попри покращення коротко- та середньострокових очікувань і помірне прискорення відновлення.
+													</p>
+												</div>
+												<!-- Footer -->
+												<div class="product-card__footer">
+													<ul class="product-card__metas card-metas">
+														<li>
+															<ul class="card-metas__tags">
+																<li>
+																	<span class="ui-tag" data-variant="blue">Євроінтеграція</span>
+																</li>
+																<li>
+																	<span class="ui-tag" data-variant="green">Економіка</span>
+																</li>
+															</ul>
+														</li>
+														<li>
+															<time datetime="#" class="card-metas__date">19.09.2025</time>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</article>
+									</li>
+									<li>
+										<article class="product-card" data-type="video">
+											<!-- Media -->
+											<figure class="product-card__media">
+												<picture>
+													<source media="(max-width: 768px)" srcset="./assets/img/home/products/02-768.webp" type="image/webp">
+													<source media="(max-width: 1280px)" srcset="./assets/img/home/products/02-1280.webp" type="image/webp">
+													<img alt="Графіки економічних показників" width="480" height="360" loading="lazy" decoding="async" src="./assets/img/home/products/02.webp">
+												</picture>
+												<a href="assets/video/placeholder.mp4" data-fancybox="">
+													<picture>
+														<source media="(max-width: 768px)" srcset="./assets/img/home/products/02-768.webp" type="image/webp">
+														<source media="(max-width: 1280px)" srcset="./assets/img/home/products/02-1280.webp" type="image/webp">
+														<img alt="Графіки економічних показників" width="480" height="360" loading="lazy" decoding="async" src="./assets/img/home/products/02.webp">
+													</picture>
+												</a>
+												<button class="product-card__play-btn" data-fancybox="" data-src="assets/video/placeholder.mp4">
+													<i class="icon-play" aria-hidden="true"></i>
+												</button>
+												<span class="product-card__category">Відео</span>
+											</figure>
+											<div class="product-card__content">
+												<!-- Header -->
+												<div class="product-card__header">
+													<h3 class="product-card__title">Україна готує перший масштабний проект будівництва соціального житла</h3>
+												</div>
+												<!-- Body -->
+												<div class="product-card__body">
+													<p>Український бізнес стикається зі зростаючою довгостроковою невизначеністю.</p>
+												</div>
+												<!-- Footer -->
+												<div class="product-card__footer">
+													<ul class="product-card__metas card-metas">
+														<li>
+															<ul class="card-metas__tags">
+																<li>
+																	<span class="ui-tag" data-variant="purple">Субгрантинг</span>
+																</li>
+															</ul>
+														</li>
+														<li>
+															<time datetime="#" class="card-metas__date">19.09.2025</time>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</article>
+									</li>
+									<li>
+										<article class="product-card" data-type="article">
+											<!-- Media -->
+											<figure class="product-card__media">
+												<picture>
+													<source media="(max-width: 768px)" srcset="./assets/img/home/products/03-768.webp" type="image/webp">
+													<source media="(max-width: 1280px)" srcset="./assets/img/home/products/03-1280.webp" type="image/webp">
+													<img alt="Прапор України" width="480" height="360" loading="lazy" decoding="async" src="./assets/img/home/products/03.webp">
+												</picture>
+												<span class="product-card__category">Стаття</span>
+											</figure>
+											<div class="product-card__content">
+												<!-- Header -->
+												<div class="product-card__header">
+													<h3 class="product-card__title">Шостий випуск Моніторингу зовнішньої торгівлі</h3>
+												</div>
+												<!-- Body -->
+												<div class="product-card__body">
+													<p>
+														Український бізнес стикається зі зростаючою довгостроковою невизначеністю, попри покращення коротко- та середньострокових очікувань і помірне прискорення відновлення.
+													</p>
+												</div>
+												<!-- Footer -->
+												<div class="product-card__footer">
+													<ul class="product-card__metas card-metas">
+														<li>
+															<ul class="card-metas__tags">
+																<li>
+																	<span class="ui-tag" data-variant="orange">Відбудова</span>
+																</li>
+															</ul>
+														</li>
+														<li>
+															<time datetime="#" class="card-metas__date">19.09.2025</time>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</article>
+									</li>
+									<li>
+										<article class="product-card" data-type="news">
+											<!-- Media -->
+											<figure class="product-card__media">
+												<picture>
+													<source media="(max-width: 768px)" srcset="./assets/img/home/products/04-768.webp" type="image/webp">
+													<source media="(max-width: 1280px)" srcset="./assets/img/home/products/04-1280.webp" type="image/webp">
+													<img alt="Технологічна взаємодія в цифровій економіці" width="480" height="360" loading="lazy" decoding="async" src="./assets/img/home/products/04.webp">
+												</picture>
+												<span class="product-card__category">Новина</span>
+											</figure>
+											<div class="product-card__content">
+												<!-- Header -->
+												<div class="product-card__header">
+													<h3 class="product-card__title">Найповільніше реформується на шляху євроінтеграції залізниця</h3>
+												</div>
+												<!-- Body -->
+												<div class="product-card__body">
+													<p>
+														Український бізнес стикається зі зростаючою довгостроковою невизначеністю, попри покращення коротко- та середньострокових очікувань і помірне прискорення відновлення.
+													</p>
+												</div>
+												<!-- Footer -->
+												<div class="product-card__footer">
+													<ul class="product-card__metas card-metas">
+														<li>
+															<ul class="card-metas__tags">
+																<li>
+																	<span class="ui-tag" data-variant="yellow">Бізнес-клімат</span>
+																</li>
+																<li>
+																	<span class="ui-tag" data-variant="green">Економіка</span>
+																</li>
+															</ul>
+														</li>
+														<li>
+															<time datetime="#" class="card-metas__date">19.09.2025</time>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</article>
+									</li>
+									<li>
+										<article class="product-card" data-type="comment">
+											<!-- Media -->
+											<figure class="product-card__media">
+												<picture>
+													<source media="(max-width: 768px)" srcset="./assets/img/home/products/05-768.webp" type="image/webp">
+													<source media="(max-width: 1280px)" srcset="./assets/img/home/products/05-1280.webp" type="image/webp">
+													<img alt="Ділова зустріч експертів" width="480" height="360" loading="lazy" decoding="async" src="./assets/img/home/products/05.webp">
+												</picture>
+												<span class="product-card__category">Коментар</span>
+											</figure>
+											<div class="product-card__content">
+												<!-- Header -->
+												<div class="product-card__header">
+													<h3 class="product-card__title">25 років ІЕД</h3>
+												</div>
+												<!-- Body -->
+												<div class="product-card__body">
+													<p>
+														Український бізнес стикається зі зростаючою довгостроковою невизначеністю, попри покращення коротко- та середньострокових очікувань і помірне прискорення відновлення.
+													</p>
+												</div>
+												<!-- Footer -->
+												<div class="product-card__footer">
+													<ul class="product-card__metas card-metas">
+														<li>
+															<ul class="card-metas__tags">
+																<li>
+																	<span class="ui-tag" data-variant="green">Економіка</span>
+																</li>
+															</ul>
+														</li>
+														<li>
+															<time datetime="#" class="card-metas__date">19.09.2025</time>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</article>
+									</li>
+									<li>
+										<article class="product-card" data-type="report">
+											<!-- Media -->
+											<figure class="product-card__media">
+												<picture>
+													<source media="(max-width: 768px)" srcset="./assets/img/home/products/06-768.webp" type="image/webp">
+													<source media="(max-width: 1280px)" srcset="./assets/img/home/products/06-1280.webp" type="image/webp">
+													<img alt="Інженер працює біля промислового обладнання" width="480" height="360" loading="lazy" decoding="async" src="./assets/img/home/products/06.webp">
+												</picture>
+												<span class="product-card__category">Звіт</span>
+											</figure>
+											<div class="product-card__content">
+												<!-- Header -->
+												<div class="product-card__header">
+													<h3 class="product-card__title">
+														Українська національна платформа Форуму громадянського суспільства Східного Партнерства разом з ІЕД провела дискусію, присвячену підсумкам URC2025
+													</h3>
+												</div>
+												<!-- Body -->
+												<div class="product-card__body">
+													<p>
+														Український бізнес стикається зі зростаючою довгостроковою невизначеністю, попри покращення коротко- та середньострокових очікувань і помірне прискорення відновлення.
+													</p>
+												</div>
+												<!-- Footer -->
+												<div class="product-card__footer">
+													<ul class="product-card__metas card-metas">
+														<li>
+															<ul class="card-metas__tags">
+																<li>
+																	<span class="ui-tag" data-variant="yellow">Бізнес-клімат</span>
+																</li>
+																<li>
+																	<span class="ui-tag" data-variant="green">Економіка</span>
+																</li>
+															</ul>
+														</li>
+														<li>
+															<time datetime="#" class="card-metas__date">19.09.2025</time>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</article>
+									</li>
+								</ul>
+							</div>
+							<div class="section-products__footer">
+								<a href="#" class="section-products__btn btn" data-variant="primary" data-size="lg">
+									<span>Більше продуктів</span>
+									<i class="icon-btn-arrow" aria-hidden="true"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- Section 06: About (done) -->
+				<section class="section-about" aria-labelledby="sectionAboutTitle">
+					<div class="section-about__decors" aria-hidden="true">
+						<img src="./assets/img/home/about/bg/01.svg" alt="" loading="lazy" decoding="async" data-img-ignore="" class="section-about__decor section-about__decor--01">
+						<img src="./assets/img/home/about/bg/02.svg" alt="" loading="lazy" decoding="async" data-img-ignore="" class="section-about__decor section-about__decor--02">
+						<img src="./assets/img/home/about/bg/03.svg" alt="" loading="lazy" decoding="async" data-img-ignore="" class="section-about__decor section-about__decor--03">
+						<img src="./assets/img/home/about/bg/04.svg" alt="" loading="lazy" decoding="async" data-img-ignore="" class="section-about__decor section-about__decor--04">
+						<img src="./assets/img/home/about/bg/05.svg" alt="" loading="lazy" decoding="async" data-img-ignore="" class="section-about__decor section-about__decor--05">
+						<img src="./assets/img/home/about/bg/06.svg" alt="" loading="lazy" decoding="async" data-img-ignore="" class="section-about__decor section-about__decor--06">
+						<img src="./assets/img/home/about/bg/07.svg" alt="" loading="lazy" decoding="async" data-img-ignore="" class="section-about__decor section-about__decor--07">
+						<img src="./assets/img/home/about/bg/08.svg" alt="" loading="lazy" decoding="async" data-img-ignore="" class="section-about__decor section-about__decor--08">
+						<img src="./assets/img/home/about/bg/09.svg" alt="" loading="lazy" decoding="async" data-img-ignore="" class="section-about__decor section-about__decor--09">
+					</div>
+					<div class="section-about__container container">
+						<div class="section-about__wrap">
+							<div class="section-about__row">
+								<div class="section-about__col">
+									<div class="section-about__content">
+										<h2 class="section-about__title" id="sectionAboutTitle">Про нас</h2>
+										<div class="section-about__desc-text">
+											<p>
+												Інститут економічних досліджень та політичних консультацій (ІЕД)
+                є провідним українським незалежним аналітичним центром, що
+                спеціалізується на економічних дослідженнях та консультуванні з
+                питань політики. ІЕД бачить свою місію в тому, щоб пропонувати
+                та просувати рішення для процвітання та сталого розвитку,
+                засновані на принципах ринкової економіки, свободи та відкритого
+                діалогу.
+											</p>
+											<p>
+												Заснований в 1999 році, Інститут активно співпрацює з Урядом в
+                процесі визначення пріоритетних напрямків та механізмів реформ
+                та веде активний діалог з усіма зацікавленими в змінах на краще
+                сторонами.
+											</p>
+										</div>
+										<a href="#" class="section-about__link link">
+											<span>Більше інфо</span>
+											<i class="icon-btn-arrow" aria-hidden="true"></i>
+										</a>
+									</div>
+								</div>
+								<div class="section-about__col">
+									<figure class="section-about__img">
+										<picture>
+											<source media="(max-width: 768px)" srcset="./assets/img/home/about/01-768.webp" type="image/webp">
+											<source media="(max-width: 1280px)" srcset="./assets/img/home/about/01-1280.webp" type="image/webp">
+											<img alt="Команда ІЕД" width="640" height="400" loading="lazy" decoding="async" src="./assets/img/home/about/01.webp">
+										</picture>
+									</figure>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- Section 07: Media (done) -->
+				<section class="section-media" aria-labelledby="sectionMediaTitle">
+					<div class="section-media__container container">
+						<div class="section-media__wrap">
+							<div class="section-media__header">
+								<h2 class="section-media__title" id="sectionMediaTitle">ІЕД в медіа</h2>
+							</div>
+							<div class="section-media__body">
+								<div class="section-media__list-wrap">
+									<ul class="section-media__list">
+										<li>
+											<article class="media-card">
+												<figure class="media-card__avatar">
+													<picture>
+														<source media="(max-width: 768px)" srcset="./assets/img/home/media/01-768.webp" type="image/webp">
+														<source media="(max-width: 1280px)" srcset="./assets/img/home/media/01-1280.webp" type="image/webp">
+														<img alt="Олександра Бетлій" width="100" height="100" loading="lazy" decoding="async" src="./assets/img/home/media/01.webp">
+													</picture>
+												</figure>
+												<div class="media-card__content">
+													<h3 class="media-card__title">
+														<a href="/">
+															Коментар Олександри Бетлій щодо проходження Україною шостого перегляду програми з МВФ
+														</a>
+													</h3>
+													<ul class="media-card__tags">
+														<li>
+															<span class="ui-tag" data-variant="yellow">Бізнес-клімат</span>
+														</li>
+													</ul>
+												</div>
+											</article>
+										</li>
+										<li>
+											<article class="media-card">
+												<figure class="media-card__avatar">
+													<picture>
+														<source media="(max-width: 768px)" srcset="./assets/img/home/media/02-768.webp" type="image/webp">
+														<source media="(max-width: 1280px)" srcset="./assets/img/home/media/02-1280.webp" type="image/webp">
+														<img alt="Оксана Кузяків" width="100" height="100" loading="lazy" decoding="async" src="./assets/img/home/media/02.webp">
+													</picture>
+												</figure>
+												<div class="media-card__content">
+													<h3 class="media-card__title">
+														<a href="/">
+															Колонка Оксани Кузяків у виданні Європейська правда про прогрес у реформуванні митниці
+														</a>
+													</h3>
+													<ul class="media-card__tags">
+														<li>
+															<span class="ui-tag" data-variant="green">Економіка</span>
+														</li>
+													</ul>
+												</div>
+											</article>
+										</li>
+										<li>
+											<article class="media-card">
+												<figure class="media-card__avatar">
+													<picture>
+														<source media="(max-width: 768px)" srcset="./assets/img/home/media/02-768.webp" type="image/webp">
+														<source media="(max-width: 1280px)" srcset="./assets/img/home/media/02-1280.webp" type="image/webp">
+														<img alt="Оксана Кузяків" width="100" height="100" loading="lazy" decoding="async" src="./assets/img/home/media/02.webp">
+													</picture>
+												</figure>
+												<div class="media-card__content">
+													<h3 class="media-card__title">
+														<a href="/">
+															Коментар Оксани Кузяків щодо закону «Про запобігання і контроль промислового забруднення»
+														</a>
+													</h3>
+													<ul class="media-card__tags">
+														<li>
+															<span class="ui-tag" data-variant="orange">Відбудова</span>
+														</li>
+													</ul>
+												</div>
+											</article>
+										</li>
+										<li>
+											<article class="media-card">
+												<figure class="media-card__avatar">
+													<img src="./assets/img/home/media/04.svg" alt="Експерт ІЕД" width="100" height="100" loading="lazy" decoding="async">
+												</figure>
+												<div class="media-card__content">
+													<h3 class="media-card__title">
+														<a href="/">
+															Непомітний успіх: чому прогрес у реформуванні митної сфери бачать у ЄС, але не в Україні. Колонка Оксани Кузяків
+														</a>
+													</h3>
+													<ul class="media-card__tags">
+														<li>
+															<span class="ui-tag" data-variant="yellow">Бізнес-клімат</span>
+														</li>
+													</ul>
+												</div>
+											</article>
+										</li>
+										<li>
+											<article class="media-card">
+												<figure class="media-card__avatar">
+													<picture>
+														<source media="(max-width: 768px)" srcset="./assets/img/home/media/05-768.webp" type="image/webp">
+														<source media="(max-width: 1280px)" srcset="./assets/img/home/media/05-1280.webp" type="image/webp">
+														<img alt="Ірина Коссе" width="100" height="100" loading="lazy" decoding="async" src="./assets/img/home/media/05.webp">
+													</picture>
+												</figure>
+												<div class="media-card__content">
+													<h3 class="media-card__title">
+														<a href="/">
+															Коментар Ірини Коссе щодо фінансового стану «Укрзалізниці» та підвищення тарифів на вантажні перевезення
+														</a>
+													</h3>
+													<ul class="media-card__tags">
+														<li>
+															<span class="ui-tag" data-variant="yellow">Бізнес-клімат</span>
+														</li>
+														<li>
+															<span class="ui-tag" data-variant="purple">Субгрантинг</span>
+														</li>
+														<li>
+															<span class="ui-tag" data-variant="blue">Євроінтеграція</span>
+														</li>
+													</ul>
+												</div>
+											</article>
+										</li>
+										<li>
+											<article class="media-card">
+												<figure class="media-card__avatar">
+													<picture>
+														<source media="(max-width: 768px)" srcset="./assets/img/home/media/05-768.webp" type="image/webp">
+														<source media="(max-width: 1280px)" srcset="./assets/img/home/media/05-1280.webp" type="image/webp">
+														<img alt="Ірина Коссе" width="100" height="100" loading="lazy" decoding="async" src="./assets/img/home/media/05.webp">
+													</picture>
+												</figure>
+												<div class="media-card__content">
+													<h3 class="media-card__title">
+														<a href="/">Колонка Ірини Коссе у виданні KyivPost про загрозу українському експорту морем</a>
+													</h3>
+													<ul class="media-card__tags">
+														<li>
+															<span class="ui-tag" data-variant="blue">Євроінтеграція</span>
+														</li>
+													</ul>
+												</div>
+											</article>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="section-media__footer">
+								<a href="#" class="section-media__btn btn" data-variant="primary" data-size="lg">
+									<span>дивитись більше</span>
+									<i class="icon-btn-arrow" aria-hidden="true"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- Section 08: Events (done) -->
+				<section class="section-events" aria-labelledby="sectionEventsTitle">
+					<div class="section-events__decors" aria-hidden="true">
+						<img src="./assets/img/home/events/bg/01.svg" alt="" loading="lazy" decoding="async" data-img-ignore="" class="section-events__decor section-events__decor--01">
+						<img src="./assets/img/home/events/bg/02.svg" alt="" loading="lazy" decoding="async" data-img-ignore="" class="section-events__decor section-events__decor--02">
+						<img src="./assets/img/home/events/bg/03.svg" alt="" loading="lazy" decoding="async" data-img-ignore="" class="section-events__decor section-events__decor--03">
+						<img src="./assets/img/home/events/bg/04.svg" alt="" loading="lazy" decoding="async" data-img-ignore="" class="section-events__decor section-events__decor--04">
+						<img src="./assets/img/home/events/bg/05.svg" alt="" loading="lazy" decoding="async" data-img-ignore="" class="section-events__decor section-events__decor--05">
+						<img src="./assets/img/home/events/bg/06.svg" alt="" loading="lazy" decoding="async" data-img-ignore="" class="section-events__decor section-events__decor--06">
+						<img src="./assets/img/home/events/bg/07.svg" alt="" loading="lazy" decoding="async" data-img-ignore="" class="section-events__decor section-events__decor--07">
+						<img src="./assets/img/home/events/bg/08.svg" alt="" loading="lazy" decoding="async" data-img-ignore="" class="section-events__decor section-events__decor--08">
+					</div>
+					<div class="section-events__container container">
+						<div class="section-events__wrap">
+							<div class="section-events__header">
+								<h2 class="section-events__title" id="sectionEventsTitle">Події</h2>
+							</div>
+							<div class="section-events__body">
+								<ul class="section-events__list">
+									<li>
+										<article class="article-card">
+											<div class="article-card__inner">
+												<div class="article-card__row">
+													<div class="article-card__date">
+														<span class="article-card__day">23</span>
+														<span class="article-card__month">Вересня</span>
+														<span class="article-card__year">2025</span>
+													</div>
+													<div class="article-card__content">
+														<h3 class="article-card__title">
+															<a href="/">
+																Прес-конференція «Автономні торговельні преференції ЄС: вплив на український експорт»
+															</a>
+														</h3>
+														<ul class="article-card__metas card-metas">
+															<li>
+																<ul class="card-metas__tags">
+																	<li>
+																		<span class="ui-tag" data-variant="green">Економіка</span>
+																	</li>
+																</ul>
+															</li>
+														</ul>
+													</div>
+													<figure class="article-card__img">
+														<picture>
+															<source media="(max-width: 768px)" srcset="./assets/img/home/products/01-768.webp" type="image/webp">
+															<source media="(max-width: 1280px)" srcset="./assets/img/home/products/01-1280.webp" type="image/webp">
+															<img alt="Прес-конференція «Автономні торговельні преференції ЄС: вплив на український експорт»" width="480" height="176" loading="lazy" decoding="async" src="./assets/img/home/products/01.webp">
+														</picture>
+													</figure>
+												</div>
+											</div>
+										</article>
+									</li>
+									<li>
+										<article class="article-card">
+											<div class="article-card__inner">
+												<div class="article-card__row">
+													<div class="article-card__date">
+														<span class="article-card__day">17</span>
+														<span class="article-card__month">Вересня</span>
+														<span class="article-card__year">2025</span>
+													</div>
+													<div class="article-card__content">
+														<h3 class="article-card__title">
+															<a href="/">Тренінг для представників аналітичних центрів</a>
+														</h3>
+														<ul class="article-card__metas card-metas">
+															<li>
+																<ul class="card-metas__tags">
+																	<li>
+																		<span class="ui-tag" data-variant="orange">Відбудова</span>
+																	</li>
+																</ul>
+															</li>
+														</ul>
+													</div>
+													<figure class="article-card__img">
+														<picture>
+															<source media="(max-width: 768px)" srcset="./assets/img/home/products/02-768.webp" type="image/webp">
+															<source media="(max-width: 1280px)" srcset="./assets/img/home/products/02-1280.webp" type="image/webp">
+															<img alt="Тренінг для представників аналітичних центрів" width="480" height="176" loading="lazy" decoding="async" src="./assets/img/home/products/02.webp">
+														</picture>
+													</figure>
+												</div>
+											</div>
+										</article>
+									</li>
+									<li>
+										<article class="article-card">
+											<div class="article-card__inner">
+												<div class="article-card__row">
+													<div class="article-card__date">
+														<span class="article-card__day">10</span>
+														<span class="article-card__month">Вересня</span>
+														<span class="article-card__year">2025</span>
+													</div>
+													<div class="article-card__content">
+														<h3 class="article-card__title">
+															<a href="/">
+																Семінар &quot;Імплементація Угоди СОТ про технічні бар’єри в торгівлі: актуальні питання&quot;
+															</a>
+														</h3>
+														<ul class="article-card__metas card-metas">
+															<li>
+																<ul class="card-metas__tags">
+																	<li>
+																		<span class="ui-tag" data-variant="purple">Субгрантинг</span>
+																	</li>
+																</ul>
+															</li>
+														</ul>
+													</div>
+													<figure class="article-card__img">
+														<picture>
+															<source media="(max-width: 768px)" srcset="./assets/img/home/products/03-768.webp" type="image/webp">
+															<source media="(max-width: 1280px)" srcset="./assets/img/home/products/03-1280.webp" type="image/webp">
+															<img alt="Семінар &quot;Імплементація Угоди СОТ про технічні бар’єри в торгівлі: актуальні питання&quot;" width="480" height="176" loading="lazy" decoding="async" src="./assets/img/home/products/03.webp">
+														</picture>
+													</figure>
+												</div>
+											</div>
+										</article>
+									</li>
+								</ul>
+							</div>
+							<div class="section-events__footer">
+								<a href="#" class="section-events__btn btn" data-variant="primary" data-size="lg">
+									<span>дивитись більше</span>
+									<i class="icon-btn-arrow" aria-hidden="true"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- Section 09: Donors (done) -->
+				<section class="section-donors" aria-labelledby="sectionDonorsTitle">
+					<div class="section-donors__container container">
+						<div class="section-donors__wrap">
+							<div class="section-donors__header">
+								<h2 class="section-donors__title" id="sectionDonorsTitle">Донори та партнери</h2>
+							</div>
+							<div class="section-donors__body">
+								<div class="section-donors__slider-wrap">
+									<button type="button" id="donorsSliderPrev" aria-label="Попередній слайд" class="section-donors__nav section-donors__nav--prev">
+										<i class="icon-chevron-left" aria-hidden="true"></i>
+									</button>
+									<div class="section-donors__slider swiper" id="donorsSlider">
+										<div class="swiper-wrapper">
+											<div class="section-donors__slide swiper-slide">
+												<figure class="section-donors__logo">
+													<img src="./assets/img/home/partners/01.svg" alt="APD" width="160" height="90" loading="lazy" decoding="async">
+												</figure>
+											</div>
+											<div class="section-donors__slide swiper-slide">
+												<figure class="section-donors__logo">
+													<picture>
+														<source media="(max-width: 768px)" srcset="./assets/img/home/partners/02-768.webp" type="image/webp">
+														<source media="(max-width: 1280px)" srcset="./assets/img/home/partners/02-1280.webp" type="image/webp">
+														<img alt="European Bank for Reconstruction and Development" width="340" height="90" loading="lazy" decoding="async" src="./assets/img/home/partners/02.webp">
+													</picture>
+												</figure>
+											</div>
+											<div class="section-donors__slide swiper-slide">
+												<figure class="section-donors__logo">
+													<picture>
+														<source media="(max-width: 768px)" srcset="./assets/img/home/partners/03-768.webp" type="image/webp">
+														<source media="(max-width: 1280px)" srcset="./assets/img/home/partners/03-1280.webp" type="image/webp">
+														<img alt="USAID" width="104" height="104" loading="lazy" decoding="async" src="./assets/img/home/partners/03.webp">
+													</picture>
+												</figure>
+											</div>
+											<div class="section-donors__slide swiper-slide">
+												<figure class="section-donors__logo">
+													<picture>
+														<source media="(max-width: 768px)" srcset="./assets/img/home/partners/04-768.webp" type="image/webp">
+														<source media="(max-width: 1280px)" srcset="./assets/img/home/partners/04-1280.webp" type="image/webp">
+														<img alt="DFID" width="260" height="90" loading="lazy" decoding="async" src="./assets/img/home/partners/04.webp">
+													</picture>
+												</figure>
+											</div>
+											<div class="section-donors__slide swiper-slide">
+												<figure class="section-donors__logo">
+													<img src="./assets/img/home/partners/05.svg" alt="KfW" width="170" height="90" loading="lazy" decoding="async">
+												</figure>
+											</div>
+											<div class="section-donors__slide swiper-slide">
+												<figure class="section-donors__logo">
+													<picture>
+														<source media="(max-width: 768px)" srcset="./assets/img/home/partners/06-768.webp" type="image/webp">
+														<source media="(max-width: 1280px)" srcset="./assets/img/home/partners/06-1280.webp" type="image/webp">
+														<img alt="Kyiv School of Economics" width="220" height="90" loading="lazy" decoding="async" src="./assets/img/home/partners/06.webp">
+													</picture>
+												</figure>
+											</div>
+											<div class="section-donors__slide swiper-slide">
+												<figure class="section-donors__logo">
+													<img src="./assets/img/home/partners/01.svg" alt="APD" width="160" height="90" loading="lazy" decoding="async">
+												</figure>
+											</div>
+											<div class="section-donors__slide swiper-slide">
+												<figure class="section-donors__logo">
+													<picture>
+														<source media="(max-width: 768px)" srcset="./assets/img/home/partners/02-768.webp" type="image/webp">
+														<source media="(max-width: 1280px)" srcset="./assets/img/home/partners/02-1280.webp" type="image/webp">
+														<img alt="European Bank for Reconstruction and Development" width="340" height="90" loading="lazy" decoding="async" src="./assets/img/home/partners/02.webp">
+													</picture>
+												</figure>
+											</div>
+											<div class="section-donors__slide swiper-slide">
+												<figure class="section-donors__logo">
+													<picture>
+														<source media="(max-width: 768px)" srcset="./assets/img/home/partners/03-768.webp" type="image/webp">
+														<source media="(max-width: 1280px)" srcset="./assets/img/home/partners/03-1280.webp" type="image/webp">
+														<img alt="USAID" width="104" height="104" loading="lazy" decoding="async" src="./assets/img/home/partners/03.webp">
+													</picture>
+												</figure>
+											</div>
+											<div class="section-donors__slide swiper-slide">
+												<figure class="section-donors__logo">
+													<picture>
+														<source media="(max-width: 768px)" srcset="./assets/img/home/partners/04-768.webp" type="image/webp">
+														<source media="(max-width: 1280px)" srcset="./assets/img/home/partners/04-1280.webp" type="image/webp">
+														<img alt="DFID" width="260" height="90" loading="lazy" decoding="async" src="./assets/img/home/partners/04.webp">
+													</picture>
+												</figure>
+											</div>
+											<div class="section-donors__slide swiper-slide">
+												<figure class="section-donors__logo">
+													<img src="./assets/img/home/partners/05.svg" alt="KfW" width="170" height="90" loading="lazy" decoding="async">
+												</figure>
+											</div>
+											<div class="section-donors__slide swiper-slide">
+												<figure class="section-donors__logo">
+													<picture>
+														<source media="(max-width: 768px)" srcset="./assets/img/home/partners/06-768.webp" type="image/webp">
+														<source media="(max-width: 1280px)" srcset="./assets/img/home/partners/06-1280.webp" type="image/webp">
+														<img alt="Kyiv School of Economics" width="220" height="90" loading="lazy" decoding="async" src="./assets/img/home/partners/06.webp">
+													</picture>
+												</figure>
+											</div>
+										</div>
+									</div>
+									<button type="button" id="donorsSliderNext" aria-label="Наступний слайд" class="section-donors__nav section-donors__nav--next">
+										<i class="icon-chevron-right" aria-hidden="true"></i>
+									</button>
+									<div class="section-donors__scrollbar swiper-scrollbar" id="donorsSliderScrollbar"></div>
+								</div>
+							</div>
+							<div class="section-donors__footer">
+								<a href="#" class="section-donors__btn btn" data-variant="primary" data-size="lg">
+									<span>дивитись більше</span>
+									<i class="icon-btn-arrow" aria-hidden="true"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+			<footer class="footer" role="contentinfo">
+				<div class="footer__top footer-top">
+					<div class="footer-top__container container">
+						<div class="footer-top__wrap">
+							<div class="footer-top__row">
+								<div class="footer-top__brand">
+									<a href="/" class="footer-top__logo" aria-label="ІЕД">
+										<img src="./assets/img/layout/footer-logo.svg" alt="ІНСТИТУТ ЕКОНОМІЧНИХ досліджень ТА ПОЛІТИЧНИХ КОНСУЛЬТАЦІЙ" width="400" height="68" loading="lazy" decoding="async">
+									</a>
+									<ul class="footer-top__contacts">
+										<li>
+											<i class="icon-map-pin" aria-hidden="true"></i>
+											<span>вул. Рейтарська 8/5-А, 01054 Київ, Україна</span>
+										</li>
+										<li>
+											<i class="icon-phone" aria-hidden="true"></i>
+											<span>
+												<a href="tel:+380442786342">+38 044 278-63-42</a>
+												,
+												<a href="tel:+380442786360">+38 044 278-63-60</a>
+											</span>
+										</li>
+										<li>
+											<i class="icon-mail" aria-hidden="true"></i>
+											<a href="mailto:institute@ier.kyiv.ua">institute@ier.kyiv.ua</a>
+										</li>
+									</ul>
+									<a href="#" class="footer-top__old-version">
+										<i class="icon-globe" aria-hidden="true"></i>
+										<span>Попередня версія сайту</span>
+									</a>
+								</div>
+								<nav class="footer-top__menus" aria-label="Footer navigation">
+									<ul class="footer-top__menu">
+										<li>
+											<a href="#">Про нас</a>
+										</li>
+										<li>
+											<a href="#">Новини</a>
+										</li>
+										<li>
+											<a href="#">Події</a>
+										</li>
+										<li>
+											<a href="#">Публікації</a>
+										</li>
+										<li>
+											<a href="#">Проєкти</a>
+										</li>
+									</ul>
+									<ul class="footer-top__menu">
+										<li>
+											<a href="#">ІЕД в медіа</a>
+										</li>
+										<li>
+											<a href="#">Оголошення</a>
+										</li>
+										<li>
+											<a href="#">Вакансії</a>
+										</li>
+										<li>
+											<a href="#">Партнери</a>
+										</li>
+										<li>
+											<a href="#">База даних</a>
+										</li>
+									</ul>
+									<ul class="footer-top__menu">
+										<li>
+											<a href="#" data-variant="green">Економіка</a>
+										</li>
+										<li>
+											<a href="#" data-variant="blue">Євроінтеграція</a>
+										</li>
+										<li>
+											<a href="#" data-variant="yellow">Бізнес-клімат</a>
+										</li>
+										<li>
+											<a href="#" data-variant="orange">Відбудова</a>
+										</li>
+										<li>
+											<a href="#" data-variant="purple">Субгрантинг</a>
+										</li>
+									</ul>
+								</nav>
+								<div class="footer-top__subscribe">
+									<ul class="footer-top__soc" aria-label="Соціальні мережі">
+										<li>
+											<a href="#" aria-label="Facebook">
+												<i class="icon-facebook" aria-hidden="true"></i>
+											</a>
+										</li>
+										<li>
+											<a href="#" aria-label="X">
+												<i class="icon-twitter-x" aria-hidden="true"></i>
+											</a>
+										</li>
+										<li>
+											<a href="#" aria-label="LinkedIn">
+												<i class="icon-linkedin" aria-hidden="true"></i>
+											</a>
+										</li>
+										<li>
+											<a href="#" aria-label="Telegram">
+												<i class="icon-telegram" aria-hidden="true"></i>
+											</a>
+										</li>
+										<li>
+											<a href="#" aria-label="Instagram">
+												<i class="icon-instagram" aria-hidden="true"></i>
+											</a>
+										</li>
+										<li>
+											<a href="#" aria-label="Viber">
+												<i class="icon-viber" aria-hidden="true"></i>
+											</a>
+										</li>
+									</ul>
+									<form class="footer-top__form footer-form" action="#" method="post">
+										<p class="footer-form__title">Залиште свій e-mail та отримуйте новини:</p>
+										<label class="footer-form__input input">
+											<span class="sr-only">E-mail</span>
+											<input type="email" value="kontstantinopolsky@gmail.com" placeholder="E-mail">
+										</label>
+										<button type="submit" data-variant="blue" data-size="sm" class="footer-form__btn btn">Підписатися</button>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer__bottom footer-bottom">
+					<div class="footer-bottom__container container">
+						<div class="footer-bottom__wrap">
+							<div class="footer-bottom__row">
+								<div class="footer-bottom__meta">
+									<div class="footer-bottom__atlas">
+										<figure>
+											<picture>
+												<source media="(max-width: 768px)" srcset="./assets/img/layout/footer/atlas-768.webp" type="image/webp">
+												<source media="(max-width: 1280px)" srcset="./assets/img/layout/footer/atlas-1280.webp" type="image/webp">
+												<img alt="" width="96" height="32" loading="lazy" decoding="async" src="./assets/img/layout/footer/atlas.webp">
+											</picture>
+										</figure>
+										<p>
+											Розроблено за підтримки
+											<strong>Atlas Network</strong>
+										</p>
+									</div>
+									<small class="footer-bottom__copyright">© 2026 Інститут економічних досліджень та політичних консультацій</small>
+								</div>
+								<p class="footer-bottom__dev">
+									Розробка сайту -
+									<strong>Activemedia</strong>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
