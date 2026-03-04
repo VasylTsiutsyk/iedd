@@ -4257,15 +4257,15 @@ button.btn {
 }
 .lang-select__option[tabindex="0"] {
   cursor: pointer;
-  transition: background-color var(--transition-duration), color var(--transition-duration);
+  transition: color var(--transition-duration);
 }
 @media (any-hover: hover) {
   .lang-select__option[tabindex="0"]:hover {
-    color: var(--color-blue-azul);
+    color: var(--color-primary);
   }
 }
 .lang-select__option[aria-selected=true] {
-  color: var(--color-blue-azul);
+  color: var(--color-primary);
 }
 
 /* Search Input */
