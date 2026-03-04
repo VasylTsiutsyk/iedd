@@ -4,16 +4,16 @@
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
-		<link rel="preload" href="/iedd/assets/fonts/NunitoSans-Variable.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-		<link rel="preload" href="/iedd/assets/fonts/NunitoSans-Italic-Variable.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-		<link rel="preload" href="/iedd/assets/fonts/Manrope-Variable.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-		<link rel="shortcut icon" href="/iedd/assets/favicon/favicon.ico">
+		<link rel="preload" href="./assets/fonts/NunitoSans-Variable.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/NunitoSans-Italic-Variable.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/Manrope-Variable.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="shortcut icon" href="./assets/favicon/favicon.ico">
 		<meta name="keywords" content="IED Keywords">
 		<meta name="description" content="IED Description">
 		<title>Search Results | IED</title>
-		<script type="module" crossorigin="" src="/iedd/js/vendor.min.js?v=1772618335681"></script>
-		<script type="module" crossorigin="" src="/iedd/js/app.min.js?v=1772618335681"></script>
-		<link rel="stylesheet" crossorigin="" href="/iedd/css/style.min.css?v=1772618335681">
+		<script type="module" crossorigin="" src="./js/vendor.min.js?v=1772618547671"></script>
+		<script type="module" crossorigin="" src="./js/app.min.js?v=1772618547671"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/style.min.css?v=1772618547671">
 	</head>
 	<body>
 		<div class="wrapper">
@@ -22,7 +22,11 @@
 					<div class="header__wrap">
 						<div class="header__row">
 							<a href="/" class="header__logo">
-								<img src="/iedd/assets/img/logo.webp" alt="IED Logo, to the homepage" width="260" height="88" fetchpriority="high">
+								<picture>
+									<source media="(max-width: 768px)" srcset="./assets/img/logo-768.webp" type="image/webp">
+									<source media="(max-width: 1280px)" srcset="./assets/img/logo-1280.webp" type="image/webp">
+									<img alt="IED Logo, to the homepage" width="260" height="88" fetchpriority="high" src="./assets/img/logo.webp">
+								</picture>
 							</a>
 							<div class="header__menus">
 								<nav class="header__top-nav top-nav">
@@ -168,7 +172,11 @@
 						<div class="header__top header-top">
 							<div class="header-top__row">
 								<a href="/" class="header-top__logo">
-									<img src="/iedd/assets/img/logo.webp" alt="IED Logo, to the homepage" width="108" height="37" fetchpriority="high">
+									<picture>
+										<source media="(max-width: 768px)" srcset="./assets/img/logo-768.webp" type="image/webp">
+										<source media="(max-width: 1280px)" srcset="./assets/img/logo-1280.webp" type="image/webp">
+										<img alt="IED Logo, to the homepage" width="108" height="37" fetchpriority="high" src="./assets/img/logo.webp">
+									</picture>
 								</a>
 								<ul class="header-top__list">
 									<li>
@@ -322,15 +330,15 @@
 				<!-- Section 01: Main (done) -->
 				<section class="section-page section-page--search-results" aria-labelledby="sectionSearchResultsTitle">
 					<div class="section-page__decors section-decors section-decors--list" aria-hidden="true">
-						<img src="/iedd/assets/img/expert-commentary/main/bg/01.svg" alt="" loading="lazy" decoding="async" data-img-ignore="" class="section-decors__decor section-decors__decor--01">
-						<img src="/iedd/assets/img/expert-commentary/main/bg/02.svg" alt="" loading="lazy" decoding="async" data-img-ignore="" class="section-decors__decor section-decors__decor--02">
-						<img src="/iedd/assets/img/news/main/bg/03.svg" alt="" loading="lazy" decoding="async" data-img-ignore="" class="section-decors__decor section-decors__decor--03">
-						<img src="/iedd/assets/img/home/monitoring/bg/03.svg" alt="" loading="lazy" decoding="async" data-img-ignore="" class="section-decors__decor section-decors__decor--04">
-						<img src="/iedd/assets/img/news/main/bg/05.svg" alt="" loading="lazy" decoding="async" data-img-ignore="" class="section-decors__decor section-decors__decor--05">
-						<img src="/iedd/assets/img/news/main/bg/06.svg" alt="" loading="lazy" decoding="async" data-img-ignore="" class="section-decors__decor section-decors__decor--06">
-						<img src="/iedd/assets/img/home/events/bg/04.svg" alt="" loading="lazy" decoding="async" data-img-ignore="" class="section-decors__decor section-decors__decor--07">
-						<img src="/iedd/assets/img/news/main/bg/08.svg" alt="" loading="lazy" decoding="async" data-img-ignore="" class="section-decors__decor section-decors__decor--08">
-						<img src="/iedd/assets/img/news/main/bg/09.svg" alt="" loading="lazy" decoding="async" data-img-ignore="" class="section-decors__decor section-decors__decor--09">
+						<img src="./assets/img/expert-commentary/main/bg/01.svg" alt="" loading="lazy" decoding="async" data-img-ignore="" class="section-decors__decor section-decors__decor--01">
+						<img src="./assets/img/expert-commentary/main/bg/02.svg" alt="" loading="lazy" decoding="async" data-img-ignore="" class="section-decors__decor section-decors__decor--02">
+						<img src="./assets/img/news/main/bg/03.svg" alt="" loading="lazy" decoding="async" data-img-ignore="" class="section-decors__decor section-decors__decor--03">
+						<img src="./assets/img/home/monitoring/bg/03.svg" alt="" loading="lazy" decoding="async" data-img-ignore="" class="section-decors__decor section-decors__decor--04">
+						<img src="./assets/img/news/main/bg/05.svg" alt="" loading="lazy" decoding="async" data-img-ignore="" class="section-decors__decor section-decors__decor--05">
+						<img src="./assets/img/news/main/bg/06.svg" alt="" loading="lazy" decoding="async" data-img-ignore="" class="section-decors__decor section-decors__decor--06">
+						<img src="./assets/img/home/events/bg/04.svg" alt="" loading="lazy" decoding="async" data-img-ignore="" class="section-decors__decor section-decors__decor--07">
+						<img src="./assets/img/news/main/bg/08.svg" alt="" loading="lazy" decoding="async" data-img-ignore="" class="section-decors__decor section-decors__decor--08">
+						<img src="./assets/img/news/main/bg/09.svg" alt="" loading="lazy" decoding="async" data-img-ignore="" class="section-decors__decor section-decors__decor--09">
 					</div>
 					<div class="section-page__container container">
 						<div class="section-page__wrap">
@@ -427,7 +435,11 @@
 																					</ul>
 																				</div>
 																				<figure class="article-card__img">
-																					<img src="/iedd/assets/img/home/products/01.jpg" alt="Українська національна платформа Форуму громадянського суспільства Східного Партнерства разом з IED провела дискусію, присвячену підсумкам URC2025 з IED провела дискусію, присвячену підсумкам URC2025..." width="480" height="176" loading="lazy" decoding="async">
+																					<picture>
+																						<source media="(max-width: 768px)" srcset="./assets/img/home/products/01-768.webp" type="image/webp">
+																						<source media="(max-width: 1280px)" srcset="./assets/img/home/products/01-1280.webp" type="image/webp">
+																						<img alt="Українська національна платформа Форуму громадянського суспільства Східного Партнерства разом з IED провела дискусію, присвячену підсумкам URC2025 з IED провела дискусію, присвячену підсумкам URC2025..." width="480" height="176" loading="lazy" decoding="async" src="./assets/img/home/products/01.webp">
+																					</picture>
 																				</figure>
 																			</div>
 																		</div>
@@ -486,7 +498,11 @@
 																					</ul>
 																				</div>
 																				<figure class="article-card__img">
-																					<img src="/iedd/assets/img/home/products/02.jpg" alt="Шостий випуск Моніторингу зовнішньої торгівлі" width="480" height="176" loading="lazy" decoding="async">
+																					<picture>
+																						<source media="(max-width: 768px)" srcset="./assets/img/home/products/02-768.webp" type="image/webp">
+																						<source media="(max-width: 1280px)" srcset="./assets/img/home/products/02-1280.webp" type="image/webp">
+																						<img alt="Шостий випуск Моніторингу зовнішньої торгівлі" width="480" height="176" loading="lazy" decoding="async" src="./assets/img/home/products/02.webp">
+																					</picture>
 																				</figure>
 																			</div>
 																		</div>
@@ -620,7 +636,11 @@
 																					</ul>
 																				</div>
 																				<figure class="article-card__img">
-																					<img src="/iedd/assets/img/home/products/01.jpg" alt="Прес-конференція «Автономні торговельні преференції ЄС: вплив на український експорт»" width="480" height="176" loading="lazy" decoding="async">
+																					<picture>
+																						<source media="(max-width: 768px)" srcset="./assets/img/home/products/01-768.webp" type="image/webp">
+																						<source media="(max-width: 1280px)" srcset="./assets/img/home/products/01-1280.webp" type="image/webp">
+																						<img alt="Прес-конференція «Автономні торговельні преференції ЄС: вплив на український експорт»" width="480" height="176" loading="lazy" decoding="async" src="./assets/img/home/products/01.webp">
+																					</picture>
 																				</figure>
 																			</div>
 																		</div>
@@ -691,7 +711,7 @@
 							<div class="footer-top__row">
 								<div class="footer-top__brand">
 									<a href="/" class="footer-top__logo" aria-label="ІЕД">
-										<img src="/iedd/assets/img/layout/footer-logo.svg" alt="ІНСТИТУТ ЕКОНОМІЧНИХ досліджень ТА ПОЛІТИЧНИХ КОНСУЛЬТАЦІЙ" width="400" height="68" loading="lazy" decoding="async">
+										<img src="./assets/img/layout/footer-logo.svg" alt="ІНСТИТУТ ЕКОНОМІЧНИХ досліджень ТА ПОЛІТИЧНИХ КОНСУЛЬТАЦІЙ" width="400" height="68" loading="lazy" decoding="async">
 									</a>
 									<ul class="footer-top__contacts">
 										<li>
@@ -822,7 +842,11 @@
 								<div class="footer-bottom__meta">
 									<div class="footer-bottom__atlas">
 										<figure>
-											<img src="/iedd/assets/img/layout/footer/atlas.png" alt="" width="96" height="32" loading="lazy" decoding="async">
+											<picture>
+												<source media="(max-width: 768px)" srcset="./assets/img/layout/footer/atlas-768.webp" type="image/webp">
+												<source media="(max-width: 1280px)" srcset="./assets/img/layout/footer/atlas-1280.webp" type="image/webp">
+												<img alt="" width="96" height="32" loading="lazy" decoding="async" src="./assets/img/layout/footer/atlas.webp">
+											</picture>
 										</figure>
 										<p>
 											Розроблено за підтримки

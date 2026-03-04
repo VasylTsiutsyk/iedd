@@ -210,142 +210,142 @@ function initHeader(options = {}) {
 const PAGES = [
   {
     title: "Home",
-    href: "/",
+    href: "/iedd/",
     status: "done"
   },
   {
     title: "News",
-    href: "/news.html",
+    href: "/iedd/news.html",
     status: "done"
   },
   {
     title: "News Inner",
-    href: "/news-inner.html",
+    href: "/iedd/news-inner.html",
     status: "done"
   },
   {
     title: "Events",
-    href: "/events.html",
+    href: "/iedd/events.html",
     status: "done"
   },
   {
     title: "Events Archive",
-    href: "/events-archive.html",
+    href: "/iedd/events-archive.html",
     status: "done"
   },
   {
     title: "Events Inner",
-    href: "/events-inner.html",
+    href: "/iedd/events-inner.html",
     status: "done"
   },
   {
     title: "About",
-    href: "/about.html",
+    href: "/iedd/about.html",
     status: "done"
   },
   {
     title: "Team",
-    href: "/team.html",
+    href: "/iedd/team.html",
     status: "done"
   },
   {
     title: "Team Member",
-    href: "/team-member.html",
+    href: "/iedd/team-member.html",
     status: "done"
   },
   {
     title: "Partners",
-    href: "/partners.html",
+    href: "/iedd/partners.html",
     status: "done"
   },
   {
     title: "Contacts",
-    href: "/contacts.html",
+    href: "/iedd/contacts.html",
     status: "done"
   },
   {
     title: "Theme",
-    href: "/theme.html",
+    href: "/iedd/theme.html",
     status: "done"
   },
   {
     title: "Theme Inner",
-    href: "/theme-inner.html",
+    href: "/iedd/theme-inner.html",
     status: "done"
   },
   {
     title: "Projects",
-    href: "/projects.html",
+    href: "/iedd/projects.html",
     status: "done"
   },
   {
     title: "Projects (Finished)",
-    href: "/projects-finished.html",
+    href: "/iedd/projects-finished.html",
     status: "done"
   },
   {
     title: "Projects Inner",
-    href: "/projects-inner.html",
+    href: "/iedd/projects-inner.html",
     status: "done"
   },
   {
     title: "Products",
-    href: "/products.html",
+    href: "/iedd/products.html",
     status: "done"
   },
   {
     title: "Products Inner",
-    href: "/products-inner.html",
+    href: "/iedd/products-inner.html",
     status: "done"
   },
   {
     title: "Databases",
-    href: "/databases.html",
+    href: "/iedd/databases.html",
     status: "done"
   },
   {
     title: "Databases Inner 01",
-    href: "/databases-inner.html",
+    href: "/iedd/databases-inner.html",
     status: "done"
   },
   {
     title: "Databases Inner 02",
-    href: "/databases-inner-02.html",
+    href: "/iedd/databases-inner-02.html",
     status: "done"
   },
   {
     title: "Comments",
-    href: "/comments.html",
+    href: "/iedd/comments.html",
     status: "done"
   },
   {
     title: "Comments Inner",
-    href: "/expert-commentary.html",
+    href: "/iedd/expert-commentary.html",
     status: "done"
   },
   {
     title: "Error 404",
-    href: "/error.html",
+    href: "/iedd/error.html",
     status: "done"
   },
   {
     title: "Search Results",
-    href: "/search-results.html",
+    href: "/iedd/search-results.html",
     status: "done"
   },
   {
     title: "News | Search Results",
-    href: "/news-search-results.html",
+    href: "/iedd/news-search-results.html",
     status: "done"
   },
   {
     title: "Events | Search Results",
-    href: "/events-search-results.html",
+    href: "/iedd/events-search-results.html",
     status: "done"
   },
   {
     title: "Products | Search Results",
-    href: "/products-search-results.html",
+    href: "/iedd/products-search-results.html",
     status: "done"
   }
 ];

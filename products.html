@@ -4,16 +4,16 @@
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
-		<link rel="preload" href="/iedd/assets/fonts/NunitoSans-Variable.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-		<link rel="preload" href="/iedd/assets/fonts/NunitoSans-Italic-Variable.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-		<link rel="preload" href="/iedd/assets/fonts/Manrope-Variable.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-		<link rel="shortcut icon" href="/iedd/assets/favicon/favicon.ico">
+		<link rel="preload" href="./assets/fonts/NunitoSans-Variable.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/NunitoSans-Italic-Variable.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/Manrope-Variable.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="shortcut icon" href="./assets/favicon/favicon.ico">
 		<meta name="keywords" content="IED Keywords">
 		<meta name="description" content="IED Description">
 		<title>Products | IED</title>
-		<script type="module" crossorigin="" src="/iedd/js/vendor.min.js?v=1772618335681"></script>
-		<script type="module" crossorigin="" src="/iedd/js/app.min.js?v=1772618335681"></script>
-		<link rel="stylesheet" crossorigin="" href="/iedd/css/style.min.css?v=1772618335681">
+		<script type="module" crossorigin="" src="./js/vendor.min.js?v=1772618547671"></script>
+		<script type="module" crossorigin="" src="./js/app.min.js?v=1772618547671"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/style.min.css?v=1772618547671">
 	</head>
 	<body>
 		<div class="wrapper">
@@ -22,7 +22,11 @@
 					<div class="header__wrap">
 						<div class="header__row">
 							<a href="/" class="header__logo">
-								<img src="/iedd/assets/img/logo.webp" alt="IED Logo, to the homepage" width="260" height="88" fetchpriority="high">
+								<picture>
+									<source media="(max-width: 768px)" srcset="./assets/img/logo-768.webp" type="image/webp">
+									<source media="(max-width: 1280px)" srcset="./assets/img/logo-1280.webp" type="image/webp">
+									<img alt="IED Logo, to the homepage" width="260" height="88" fetchpriority="high" src="./assets/img/logo.webp">
+								</picture>
 							</a>
 							<div class="header__menus">
 								<nav class="header__top-nav top-nav">
@@ -168,7 +172,11 @@
 						<div class="header__top header-top">
 							<div class="header-top__row">
 								<a href="/" class="header-top__logo">
-									<img src="/iedd/assets/img/logo.webp" alt="IED Logo, to the homepage" width="108" height="37" fetchpriority="high">
+									<picture>
+										<source media="(max-width: 768px)" srcset="./assets/img/logo-768.webp" type="image/webp">
+										<source media="(max-width: 1280px)" srcset="./assets/img/logo-1280.webp" type="image/webp">
+										<img alt="IED Logo, to the homepage" width="108" height="37" fetchpriority="high" src="./assets/img/logo.webp">
+									</picture>
 								</a>
 								<ul class="header-top__list">
 									<li>
@@ -345,7 +353,11 @@
 												<article class="product-card" data-type="publication">
 													<!-- Media -->
 													<figure class="product-card__media">
-														<img src="/iedd/assets/img/home/products/01.jpg" alt="Аналітика української економіки" width="480" height="360" loading="lazy" decoding="async">
+														<picture>
+															<source media="(max-width: 768px)" srcset="./assets/img/home/products/01-768.webp" type="image/webp">
+															<source media="(max-width: 1280px)" srcset="./assets/img/home/products/01-1280.webp" type="image/webp">
+															<img alt="Аналітика української економіки" width="480" height="360" loading="lazy" decoding="async" src="./assets/img/home/products/01.webp">
+														</picture>
 														<span class="product-card__category">Публікація</span>
 													</figure>
 													<div class="product-card__content">
@@ -384,7 +396,11 @@
 												<article class="product-card" data-type="comment">
 													<!-- Media -->
 													<figure class="product-card__media">
-														<img src="/iedd/assets/img/home/products/01.jpg" alt="Аналітика української економіки" width="480" height="360" loading="lazy" decoding="async">
+														<picture>
+															<source media="(max-width: 768px)" srcset="./assets/img/home/products/01-768.webp" type="image/webp">
+															<source media="(max-width: 1280px)" srcset="./assets/img/home/products/01-1280.webp" type="image/webp">
+															<img alt="Аналітика української економіки" width="480" height="360" loading="lazy" decoding="async" src="./assets/img/home/products/01.webp">
+														</picture>
 														<span class="product-card__category">Коментар</span>
 													</figure>
 													<div class="product-card__content">
@@ -420,7 +436,11 @@
 												<article class="product-card" data-type="report">
 													<!-- Media -->
 													<figure class="product-card__media">
-														<img src="/iedd/assets/img/home/products/01.jpg" alt="Аналітика української економіки" width="480" height="360" loading="lazy" decoding="async">
+														<picture>
+															<source media="(max-width: 768px)" srcset="./assets/img/home/products/01-768.webp" type="image/webp">
+															<source media="(max-width: 1280px)" srcset="./assets/img/home/products/01-1280.webp" type="image/webp">
+															<img alt="Аналітика української економіки" width="480" height="360" loading="lazy" decoding="async" src="./assets/img/home/products/01.webp">
+														</picture>
 														<span class="product-card__category">Звіт</span>
 													</figure>
 													<div class="product-card__content">
@@ -461,7 +481,11 @@
 												<article class="product-card" data-type="publication">
 													<!-- Media -->
 													<figure class="product-card__media">
-														<img src="/iedd/assets/img/home/products/01.jpg" alt="Аналітика української економіки" width="480" height="360" loading="lazy" decoding="async">
+														<picture>
+															<source media="(max-width: 768px)" srcset="./assets/img/home/products/01-768.webp" type="image/webp">
+															<source media="(max-width: 1280px)" srcset="./assets/img/home/products/01-1280.webp" type="image/webp">
+															<img alt="Аналітика української економіки" width="480" height="360" loading="lazy" decoding="async" src="./assets/img/home/products/01.webp">
+														</picture>
 														<span class="product-card__category">Публікація</span>
 													</figure>
 													<div class="product-card__content">
@@ -500,7 +524,11 @@
 												<article class="product-card" data-type="publication">
 													<!-- Media -->
 													<figure class="product-card__media">
-														<img src="/iedd/assets/img/home/products/01.jpg" alt="Аналітика української економіки" width="480" height="360" loading="lazy" decoding="async">
+														<picture>
+															<source media="(max-width: 768px)" srcset="./assets/img/home/products/01-768.webp" type="image/webp">
+															<source media="(max-width: 1280px)" srcset="./assets/img/home/products/01-1280.webp" type="image/webp">
+															<img alt="Аналітика української економіки" width="480" height="360" loading="lazy" decoding="async" src="./assets/img/home/products/01.webp">
+														</picture>
 														<span class="product-card__category">Публікація</span>
 													</figure>
 													<div class="product-card__content">
@@ -539,7 +567,11 @@
 												<article class="product-card" data-type="publication">
 													<!-- Media -->
 													<figure class="product-card__media">
-														<img src="/iedd/assets/img/home/products/01.jpg" alt="Аналітика української економіки" width="480" height="360" loading="lazy" decoding="async">
+														<picture>
+															<source media="(max-width: 768px)" srcset="./assets/img/home/products/01-768.webp" type="image/webp">
+															<source media="(max-width: 1280px)" srcset="./assets/img/home/products/01-1280.webp" type="image/webp">
+															<img alt="Аналітика української економіки" width="480" height="360" loading="lazy" decoding="async" src="./assets/img/home/products/01.webp">
+														</picture>
 														<span class="product-card__category">Публікація</span>
 													</figure>
 													<div class="product-card__content">
@@ -673,7 +705,11 @@
 										<article class="product-card" data-type="publication">
 											<!-- Media -->
 											<figure class="product-card__media">
-												<img src="/iedd/assets/img/home/products/01.jpg" alt="Аналітика української економіки" width="480" height="360" loading="lazy" decoding="async">
+												<picture>
+													<source media="(max-width: 768px)" srcset="./assets/img/home/products/01-768.webp" type="image/webp">
+													<source media="(max-width: 1280px)" srcset="./assets/img/home/products/01-1280.webp" type="image/webp">
+													<img alt="Аналітика української економіки" width="480" height="360" loading="lazy" decoding="async" src="./assets/img/home/products/01.webp">
+												</picture>
 												<span class="product-card__category">Публікація</span>
 											</figure>
 											<div class="product-card__content">
@@ -712,7 +748,11 @@
 										<article class="product-card" data-type="publication">
 											<!-- Media -->
 											<figure class="product-card__media">
-												<img src="/iedd/assets/img/home/products/01.jpg" alt="Аналітика української економіки" width="480" height="360" loading="lazy" decoding="async">
+												<picture>
+													<source media="(max-width: 768px)" srcset="./assets/img/home/products/01-768.webp" type="image/webp">
+													<source media="(max-width: 1280px)" srcset="./assets/img/home/products/01-1280.webp" type="image/webp">
+													<img alt="Аналітика української економіки" width="480" height="360" loading="lazy" decoding="async" src="./assets/img/home/products/01.webp">
+												</picture>
 												<span class="product-card__category">Публікація</span>
 											</figure>
 											<div class="product-card__content">
@@ -751,7 +791,11 @@
 										<article class="product-card" data-type="publication">
 											<!-- Media -->
 											<figure class="product-card__media">
-												<img src="/iedd/assets/img/home/products/01.jpg" alt="Аналітика української економіки" width="480" height="360" loading="lazy" decoding="async">
+												<picture>
+													<source media="(max-width: 768px)" srcset="./assets/img/home/products/01-768.webp" type="image/webp">
+													<source media="(max-width: 1280px)" srcset="./assets/img/home/products/01-1280.webp" type="image/webp">
+													<img alt="Аналітика української економіки" width="480" height="360" loading="lazy" decoding="async" src="./assets/img/home/products/01.webp">
+												</picture>
 												<span class="product-card__category">Публікація</span>
 											</figure>
 											<div class="product-card__content">
@@ -790,7 +834,11 @@
 										<article class="product-card" data-type="publication">
 											<!-- Media -->
 											<figure class="product-card__media">
-												<img src="/iedd/assets/img/home/products/01.jpg" alt="Аналітика української економіки" width="480" height="360" loading="lazy" decoding="async">
+												<picture>
+													<source media="(max-width: 768px)" srcset="./assets/img/home/products/01-768.webp" type="image/webp">
+													<source media="(max-width: 1280px)" srcset="./assets/img/home/products/01-1280.webp" type="image/webp">
+													<img alt="Аналітика української економіки" width="480" height="360" loading="lazy" decoding="async" src="./assets/img/home/products/01.webp">
+												</picture>
 												<span class="product-card__category">Публікація</span>
 											</figure>
 											<div class="product-card__content">
@@ -829,7 +877,11 @@
 										<article class="product-card" data-type="publication">
 											<!-- Media -->
 											<figure class="product-card__media">
-												<img src="/iedd/assets/img/home/products/01.jpg" alt="Аналітика української економіки" width="480" height="360" loading="lazy" decoding="async">
+												<picture>
+													<source media="(max-width: 768px)" srcset="./assets/img/home/products/01-768.webp" type="image/webp">
+													<source media="(max-width: 1280px)" srcset="./assets/img/home/products/01-1280.webp" type="image/webp">
+													<img alt="Аналітика української економіки" width="480" height="360" loading="lazy" decoding="async" src="./assets/img/home/products/01.webp">
+												</picture>
 												<span class="product-card__category">Публікація</span>
 											</figure>
 											<div class="product-card__content">
@@ -868,7 +920,11 @@
 										<article class="product-card" data-type="publication">
 											<!-- Media -->
 											<figure class="product-card__media">
-												<img src="/iedd/assets/img/home/products/01.jpg" alt="Аналітика української економіки" width="480" height="360" loading="lazy" decoding="async">
+												<picture>
+													<source media="(max-width: 768px)" srcset="./assets/img/home/products/01-768.webp" type="image/webp">
+													<source media="(max-width: 1280px)" srcset="./assets/img/home/products/01-1280.webp" type="image/webp">
+													<img alt="Аналітика української економіки" width="480" height="360" loading="lazy" decoding="async" src="./assets/img/home/products/01.webp">
+												</picture>
 												<span class="product-card__category">Публікація</span>
 											</figure>
 											<div class="product-card__content">
@@ -952,7 +1008,7 @@
 							<div class="footer-top__row">
 								<div class="footer-top__brand">
 									<a href="/" class="footer-top__logo" aria-label="ІЕД">
-										<img src="/iedd/assets/img/layout/footer-logo.svg" alt="ІНСТИТУТ ЕКОНОМІЧНИХ досліджень ТА ПОЛІТИЧНИХ КОНСУЛЬТАЦІЙ" width="400" height="68" loading="lazy" decoding="async">
+										<img src="./assets/img/layout/footer-logo.svg" alt="ІНСТИТУТ ЕКОНОМІЧНИХ досліджень ТА ПОЛІТИЧНИХ КОНСУЛЬТАЦІЙ" width="400" height="68" loading="lazy" decoding="async">
 									</a>
 									<ul class="footer-top__contacts">
 										<li>
@@ -1083,7 +1139,11 @@
 								<div class="footer-bottom__meta">
 									<div class="footer-bottom__atlas">
 										<figure>
-											<img src="/iedd/assets/img/layout/footer/atlas.png" alt="" width="96" height="32" loading="lazy" decoding="async">
+											<picture>
+												<source media="(max-width: 768px)" srcset="./assets/img/layout/footer/atlas-768.webp" type="image/webp">
+												<source media="(max-width: 1280px)" srcset="./assets/img/layout/footer/atlas-1280.webp" type="image/webp">
+												<img alt="" width="96" height="32" loading="lazy" decoding="async" src="./assets/img/layout/footer/atlas.webp">
+											</picture>
 										</figure>
 										<p>
 											Розроблено за підтримки
