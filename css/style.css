@@ -6761,6 +6761,8 @@ button.btn {
   border: 0.0625rem solid var(--color-border);
   border-radius: var(--radius-12);
   background-color: var(--color-surface);
+  color: var(--color-text);
+  transition: box-shadow var(--transition-duration);
 }
 @media (max-width: 79rem) {
   .partner-card {
@@ -6779,6 +6781,14 @@ button.btn {
     --card-px: 1.25rem;
     --card-py: 1.25rem;
     --card-img-width: 100%;
+  }
+}
+@media (any-hover: hover) {
+  .partner-card:hover {
+    box-shadow: 0 0.3125rem 0.625rem 0 rgba(109, 109, 109, 0.15);
+  }
+  .partner-card:hover .partner-card__title {
+    color: var(--color-primary);
   }
 }
 .partner-card__inner {
@@ -6821,6 +6831,9 @@ button.btn {
   flex: 1 1 auto;
   min-inline-size: 0;
   padding: var(--card-py) var(--card-px);
+}
+.partner-card__title {
+  transition: color var(--transition-duration);
 }
 .partner-card__title:not(:last-child) {
   margin-block-end: 0.875rem;
