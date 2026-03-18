@@ -4416,6 +4416,38 @@ button.btn {
 .section__expert-cards > li:not(:last-child) {
   border-block-end: 0.0625rem solid var(--color-border);
 }
+.section__frame {
+  position: relative;
+}
+.section__frame picture {
+  display: contents;
+}
+.section__frame img {
+  display: block;
+  inline-size: 100%;
+  block-size: auto;
+  object-fit: contain;
+}
+.section__more-btn {
+  inline-size: 100%;
+}
+.section__more-btn:not(:last-child) {
+  margin-block-end: clamp(1.5rem, 1.175rem + 1.625vw, 3.125rem);
+}
+.section__themes {
+  display: grid;
+  gap: clamp(2.5rem, 2.25rem + 1.25vw, 3.75rem) clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
+  grid-template-columns: var(--grid-2);
+}
+@media (max-width: 61rem) {
+  .section__themes {
+    grid-template-columns: var(--grid-1);
+  }
+}
+.section__themes > li {
+  container-name: card-wrap;
+  container-type: inline-size;
+}
 
 /* Section Hero */
 .hero {
@@ -6482,6 +6514,11 @@ button.btn {
   }
 }
 
+@container card-wrap (width > 30rem) {
+  .product-card__media {
+    padding-block-end: 48%;
+  }
+}
 /* Media Card */
 .media-card {
   --card-img-size: 6.25rem;

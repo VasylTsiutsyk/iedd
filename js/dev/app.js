@@ -347,6 +347,16 @@ const PAGES = [
     title: "Products | Search Results",
     href: "/iedd/products-search-results.html",
     status: "done"
+  },
+  {
+    title: "Topics",
+    href: "/iedd/topics.html",
+    status: "done"
+  },
+  {
+    title: "Topics Inner",
+    href: "/iedd/topics-inner.html",
+    status: "done"
   }
 ];
 function createSitemapItem(page) {
